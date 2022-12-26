@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@200;400;500;800&family=Nunito+Sans:wght@700&family=Open+Sans:wght@700&family=Permanent+Marker&display=swap');
+/*
+font-family: 'Hanken Grotesk', sans-serif;
+font-family: 'Nunito Sans', sans-serif;
+font-family: 'Open Sans', sans-serif;
+font-family: 'Permanent Marker', cursive;
+*/
+
+
+*{
+  margin:0;
+  box-sizing:border-box;
+}
+.main{
+  scroll-snap-type: y mandatory;
+  overflow-y:scroll;
+  height:100vh;
+}
+section{
+	scroll-snap-align:start;
+	height:100vh;
+	background:yellow;
+	display:flex;
+	font-family: 'Hanken Grotesk', sans-serif;
+
+}
+.sec1{
+	height:100vh;
+	background:black;
+	display:flex;
+	flex-direction: column;
+	justify-content:space-between;
+	font-weight: 500;
+	background: linear-gradient(rgba(0,0,0,.5), rgba(0,0,0,.5)),url("ales-nesetril-Im7lZjxeLhg-unsplash.jpg");
+	background-color:rgba(0,0,0,0.2);
+	background-repeat:repeat;
+	background-size: cover;
+}
+.sec2{
+	height:100vh;
+	background:black;
+	display:flex;
+	flex-direction: column;
+	justify-content:space-between;
+	font-weight: 500;
+	background: linear-gradient(rgba(0,0,0,.5), rgba(0,0,0,.5)),url("ales-nesetril-Im7lZjxeLhg-unsplash.jpg");
+	background-color:rgba(0,0,0,0.2);
+	background-repeat:repeat;
+	background-size: cover;
+}
+
+.intro{
+	text-align:center;
+}
+#name {
+	color:white;
+	font-size: 48px;
+}
+#title {
+	color:yellow;
+	font-size: 28px;
+	font-weight: 400;
+}
+
+#iam {
+	color:white;
+	font-size:25px;
+	font-family: 'Permanent Marker', cursive;
+}
+.navbar{
+	margin: 10px 50px;
+	display: flex;
+	justify-content:space-between;
+	font-size: 16px;
+	font-weight: 400;
+}
+.logo {
+	flex-grow:1;
+	color:white;	
+	font-size: 25px;
+}
+nav {
+	display:flex;
+	color:white;
+	flex-grow:1;
+	justify-content: flex-end;
+	align-items: center;
+	gap: 45px;
+}
+
+div a{
+	text-decoration: none;
+	color: white;
+}
