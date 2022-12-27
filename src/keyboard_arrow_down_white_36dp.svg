@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" height="36px" viewBox="0 0 24 24" width="36px">
+
+	<style>
+		#downarrow {
+			fill: #ffffff; opacity:0;
+			animation: 2s opacity infinite;
+			}
+		@keyframes opacity {
+			15% {opacity: 0}
+			35% {opacity: 1}
+			65% {opacity: 1}
+			85% {opacity: 0}
+			}
+	</style>
+	<path d="M0 0h24v24H0V0z" fill="none"/>
+	<path id="downarrow" d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6 1.41-1.41z"/>
+</svg>

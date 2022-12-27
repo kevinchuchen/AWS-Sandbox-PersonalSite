@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <head>
 	<meta charset="utf-8">
 	<title>Lim Chu Chen</title>
@@ -9,10 +10,9 @@
 	<link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@200;400;500;800&family=Nunito+Sans:wght@700&family=Open+Sans:wght@700&family=Permanent+Marker&display=swap" rel="stylesheet">
 </head>
 <body>
+
 <div class="main">
-
-
-<section class="sec1 bg-image">
+<section class="sec1">
 	<div class="placeholder"></div>
 	<div class="intro">
 		<div id="iam">I am</div>
@@ -21,24 +21,49 @@
 	</div>
 	<div class="navbar">
 		<div class="logo"> Lim Chu Chen </div>
-		<div class="downarrow"><img src="keyboard_arrow_down_white_36dp.svg" alt="down arrow"></div>
+		<div class="downarrow"><img src="./src/keyboard_arrow_down_white_36dp.svg" alt="down arrow"></div>
 		<nav>
-			<div><a href="">Home</a></div>
-			<div><a href="">About Me</a></div>
-			<div><a href="">Portfolio</a></div>
+			<div><a class="nav-menu" href="">Home</a></div>
+			<div><a class="nav-menu" href="">About Me</a></div>
+			<div><a class="nav-menu" href="">Portfolio</a></div>
 		</nav>
 	</div>
+
 </section>
-  
-<section class="sec2" style="height:100vh;background:yellow;display:flex;justify-content:center;align-items:center;">
-  <div style="height:40vh;width:40vh;background:transparent;border:5vh solid black;"></div>
+
+
+<section class="sec2">
+	<div class="leftright-wrapper test">
+		<div class="left">
+			<div class="photo">photo placeholder</div>
+		</div>
+		<div class="right">
+				<div class="AboutMe "><h1>About me</h1></div>
+				<div class="sec2-content ">
+					<p class="indent" align="justify">
+						Hello! I'm Chu Chen. I'm an optical transmisison engineer by day, and an aspiring cloud engineer and solutions architect by night.
+						I'm a certified AWS solutions architect equipped with the knowledge of designing, developing and maintaining
+						secure and highly-available cloud infrastructures that follows industry best practices.
+					</p>
+					<p class="indent" align="justify">
+						As such, I created this website to use as a sandbox to implement a cloud-based backend infrastructure, and to also improve on my front-end development skills.
+						This website is designed to be fully hosted in the cloud with a serverless architecture and in a highly-redundant manner (technical details can be found on the next page).
+					</p>
+					<p class="indent" align="justify">
+						I'm open to work and looking for an opportunity to enter the cloud industry. Please reach out to me at 
+						<a class="mail" href = "mailto: kevinchuchen@gmail.com">kevinchuchen@gmail.com</a> !
+					</p>
+				</div>
+		</div>
+	</div>
+	<div class="downarrow-sec2"><img src="./src/keyboard_arrow_down_white_36dp.svg" alt="down arrow"></div>
 </section>
-  
-<section class="sec3" style="height:100vh;background:black;display:flex;justify-content:center;align-items:center;">
+
+<section class="sec3">
   <div style="height:40vh;width:40vh;background:transparent;border:5vh solid yellow;"></div>
 </section>
   
-  <section class="sec4" style="height:100vh;background:yellow;display:flex;justify-content:center;align-items:center;">
+  <section class="sec4">
   <div style="height:40vh;width:40vh;background:transparent;border:5vh solid black;"></div>
 </section>
   
