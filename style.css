@@ -22,7 +22,7 @@ accent color
 */
 
 .test {
-	border: 2px solid red;
+	border: 1px solid red;
 }
 .main {
 	min-height:100%
@@ -31,8 +31,21 @@ accent color
   margin:0;
   box-sizing:border-box;
 }
-
-
+section{
+	scroll-snap-align:start;
+	background:#0e1111;
+	display:flex;
+	font-family: 'Hanken Grotesk', sans-serif;
+	color:white;
+}
+#iam{
+	font-size:25px;
+	font-family: 'Permanent Marker', cursive;
+}
+#name{
+}
+#title{
+}
 
 @media DISABLED { /*comment*/
 .main::-webkit-scrollbar { 
