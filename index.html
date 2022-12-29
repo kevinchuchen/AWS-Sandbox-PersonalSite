@@ -14,48 +14,34 @@
 <body>
 
 	<div class="main">
-		<section class="container-fluid d-flex flex-column justify-content-between test p-0">
-			<div class="placeholder container-fluid bg-light test">
-				<div class="row bg-light">
-				  <div class="col">1 of 2</div>
-				  <div class="col">2 of 2</div>
-				  <div class="col">2 3of 2</div>
-
-				</div>
-			
-			</div>
-			<div class=" test d-flex flex-column align-items-center">
+		<section class="container-fluid d-flex flex-column justify-content-between w-100 p-0">
+			<div class="placeholder bg-transparent"> test</div>
+			<div class=" testr d-flex flex-column align-items-center">
 				<div id="iam">I am</div>
 				<div id="name">Lim Chu Chen</div>
 				<div id="title">Solutions Architect</div>
 			</div>
 
-			<nav class="navbar navbar-dark bg-dark navbar-expand-md p-0 test">
-				<div class="container-fluid test">
-					<div class="row">
-						<a class="col  test" href="#"> Lim Chu Chen </a>
-						<div class="col test"><img src="./src/keyboard_arrow_down_white_36dp.svg" alt="down arrow"></div>
-					</div>
-				<!--
-logo navbar-brand
-downarrow
-					<button class="navbar-toggler flex-fill test m-0 p-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-					  <span class="navbar-toggler-icon"></span>
-					</button>
-					<div class="collapse navbar-collapse test" id="navbarToggle">
-						<div class="navbar-nav">
-							<ul class="d-flex flex-row">
-								<li class="nav-item "><a class="nav-link " href="">Home</a></li>
-								<li class="nav-item "><a class="nav-link " href="">About Me</a></li>
-								<li class="nav-item "><a class="nav-link " href="">Portfolio</a></li>
-							</ul>
-						</div>
-					</div>
-				-->
-				</div>
-			</nav>
+			
+			
+<nav class="navbar navbar-expand-lg p-0 navbar-dark bg-dark">
+	<div class="w-100 d-flex">
+		<a class="logo navbar-brand nav-flex-1 m-0 ps-3" href="#"> Lim Chu Chen </a>
+		<div class=" downarrow-sec1 nav-flex-1"><img src="./src/keyboard_arrow_down_white_36dp.svg" alt="down arrow"></div>
+		<button class="navbar-button navbar-toggler nav-flex-1 pe-3" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+		  <span class="navbar-toggler-icon"></span>
+		</button>
+		<div class="collapse navbar-collapse"  id="navbarTogglerDemo02">
+				<ul class="navbar-nav">
+					<li class="nav-item "><a class="nav-link active" href="">Home</a></li>
+					<li class="nav-item "><a class="nav-link " href="">About Me</a></li>
+					<li class="nav-item "><a class="nav-link " href="">Portfolio</a></li>
+				</ul>
+		</div>
+	</div>
+</nav>
 
-		</section>
+</section>
 
 
 		<section class="sec2">
@@ -96,9 +82,14 @@ downarrow
 	</div>
 	<script src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
 	<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
-	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js" integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD" crossorigin="anonymous"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/scrollify/1.0.21/jquery.scrollify.min.js" integrity="sha512-UyX8JsMsNRW1cYl8BoxpcamonpwU2y7mSTsN0Z52plp7oKo1u92Xqfpv6lOlTyH3yiMXK+gU1jw0DVCsPTfKew==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 	<script src="script.js" ></script>
+	
+	<script>
+		$(".navbar-collapse").click(function () {
+		  $(".navbar-collapse").collapse("hide");
+		});
+	</script>
 </body>
 </html>
 

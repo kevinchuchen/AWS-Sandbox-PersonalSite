@@ -21,20 +21,26 @@ accent color
 #red, purple, dark blue, light blue, terqoiz, green, spotify green
 */
 
-.test {
+.testr {
 	border: 1px solid red;
 }
-.main {
-	min-height:100%
+.testg {
+	border: 1px solid green;
 }
-*{
-  margin:0;
-  box-sizing:border-box;
+.testb {
+	border: 1px solid blue;
+}
+.nav-flex-1{
+	flex:1;
+}
+.downarrow-sec1{
+	text-align:center;
+}
+.navbar-button{
+	text-align:end;
 }
 section{
-	scroll-snap-align:start;
-	background:#0e1111;
-	display:flex;
+	background: #0e1111;
 	font-family: 'Hanken Grotesk', sans-serif;
 	color:white;
 }
