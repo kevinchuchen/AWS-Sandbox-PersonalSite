@@ -37,18 +37,13 @@ accent color
 .downarrow-sec1{
 	text-align:center;
 }
-.navbar-button{
+.navbar-btn-container{
 	text-align:end;
 }
-.nav-icon{
-	outline:1px solid yellow;
-	border-radius: 5px;
+.navbar-btn-container.navbar-toggler{
+	border: none;
 }
 
-.nav-icon:focus{
-	outline:5px solid red;
-	border-radius: 5px;
-}
 @media only screen and (max-width: 992px) { /*hide navbar for small screens*/
 	.hide-lg{
 		display:none;
