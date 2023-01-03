@@ -20,10 +20,56 @@ accent color
 #391e63,#c2185b,#9c27b0,#5727b0,#272ab0,#276bb0,#57acdc,#57dcbe,#60c689, #1DB954
 #red, purple, dark blue, light blue, terqoiz, green, spotify green
 */
-*{
-  margin:0;
-  box-sizing:border-box;
+
+.testr {
+	border: 1px solid red;
 }
+.testg {
+	border: 1px solid green;
+}
+.testb {
+	border: 1px solid blue;
+}
+.nav-flex-1{
+	flex:1;
+	width:0;
+}
+.downarrow-sec1{
+	text-align:center;
+}
+.navbar-button{
+	text-align:end;
+}
+.nav-icon{
+	outline:1px solid yellow;
+	border-radius: 5px;
+}
+
+.nav-icon:focus{
+	outline:5px solid red;
+	border-radius: 5px;
+}
+@media only screen and (max-width: 992px) { /*hide navbar for small screens*/
+	.hide-lg{
+		display:none;
+	}
+}
+
+section{
+	background: #0e1111;
+	font-family: 'Hanken Grotesk', sans-serif;
+	color:white;
+}
+#iam{
+	font-family: 'Permanent Marker', cursive;
+}
+#name{
+	font-family: 'Hanken Grotesk', sans-serif;
+}
+#title{
+	color: #1DB954
+}
+@media DISABLED { /*comment*/
 .main::-webkit-scrollbar { 
 	display: none;  /* Safari and Chrome */
 }
@@ -32,13 +78,11 @@ accent color
     scrollbar-width: none;  /* Firefox */
 	scroll-snap-type: y mandatory;
 	overflow-y:scroll;
-	height:100vh;
 	color:white;
 }
 section{
 	width:100vw;
 	scroll-snap-align:start;
-	height:100vh;
 	background:#0e1111;
 	display:flex;
 	font-family: 'Hanken Grotesk', sans-serif;
@@ -112,8 +156,9 @@ p.indent{
     scrollbar-width: none;  /* Firefox */
 	display:flex;
 	flex-direction:column;
-	gap: 20px;
-	overflow-y: scroll;
+	justify-content: space-between;
+
+	text-overflow: ellipsis;
 }
 
 .sec3{
@@ -185,4 +230,6 @@ nav {
 
 .test{
 	border: 1px solid white;
+}
+
 }
