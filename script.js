@@ -3,10 +3,10 @@
 //			Add background on section 1
 //			change nav-icon color to white
 //			Set hyperlink
-
-$(function() {
-	$.scrollify({
-		section: "section",
-		scrollSpeed:1,
-	});
+new fullpage('#fullpage', {
+	//options here
+	autoScrolling:true,
+	scrollHorizontally: true,
+	credits:{ enabled: true, label: 'test2 with fullPage.js', position: 'right'},
+	verticalCentered: false,
 });
