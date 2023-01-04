@@ -60,7 +60,7 @@ body, html {
 .downarrow-container{
 
 }
-@media only screen and (min-width: 768px) { /*hide navbar for med and below screens*/
+@media only screen and (min-width: 992px) { /*hide navbar for med and below screens*/
 	.sec-2{
 		position:relative;
 	}
@@ -70,6 +70,23 @@ body, html {
 		height:100%;
 		background-color:transparent;
 	}
+	.right {
+	}
+	.AboutMe{
+		position: relative;
+		padding: 40px;
+		padding-right: 100px;
+		right: 400px;
+		margin: 0px auto;
+		background-color:var(--bg-black1);
+		border-radius: 100px;
+	}
+}
+.headshot {
+	border-radius: 10%;
+	position:relative;
+	-webkit-box-shadow: -23px 23px 0px 4px #000000; 
+	box-shadow: -23px 23px 0px 4px #137736;
 }
 
 @media only screen and (max-width: 992px) { /*hide navbar for med and below screens*/
