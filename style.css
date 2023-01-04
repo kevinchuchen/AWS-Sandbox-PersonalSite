@@ -46,23 +46,33 @@ body, html {
 .navbar-btn-container.navbar-toggler{
 	border: none;
 }
-.left-right-wrapper {
-	border: 3px solid white
-
-}
-.downarrow-container {
-	position: absolute;
-	border: 2px solid var(--dark-green);
-	bottom:50%;
-	background-color:transparent;
-}
 
 .left{
 	background-color: var(--dark-green);
 }
 
+.sec-2-wrapper{
 
-@media only screen and (max-width: 992px) { /*hide navbar for small screens*/
+}
+.left-right-wrapper{
+	flex:1;
+}
+.downarrow-container{
+
+}
+@media only screen and (min-width: 768px) { /*hide navbar for med and below screens*/
+	.sec-2{
+		position:relative;
+	}
+	.downarrow-container{
+		position:absolute;
+		top:95%;
+		height:100%;
+		background-color:transparent;
+	}
+}
+
+@media only screen and (max-width: 992px) { /*hide navbar for med and below screens*/
 	.hide-lg{
 		display:none;
 	}
