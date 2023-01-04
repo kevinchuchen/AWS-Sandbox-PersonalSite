@@ -21,15 +21,17 @@
 			<div class="display-1 fw-bold" id="name">Lim Chu Chen</div>
 			<div class="display-6" id="title">Solutions Architect</div>
 		</div>
-
+    
 		<div class="flex-container">
 			<nav class="navbar navbar-expand-lg px-3 navbar-dark m-0">
 				<div class="w-100 d-flex align-items-end">
 					<a class="logo navbar-brand nav-flex-1 m-0 ps-3 text-wrap" href="#"> Lim Chu Chen </a>
-					<div class="testr downarrow-sec1 nav-flex-1 "><img src="./src/keyboard_arrow_down_white_36dp.svg" alt="down arrow"></div>
-					<button class="testr nav-flex-1 pe-3 navbar-button navbar-toggler " type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
-					  <span class="nav-icon navbar-toggler-icon"></span>
-					</button>
+					<div class="downarrow-sec1 nav-flex-1 "><img src="./src/keyboard_arrow_down_white_36dp.svg" alt="down arrow"></div>
+					<div class="flex-container nav-flex-1 pe-3 navbar-btn-container navbar-toggler">
+						<button class="p-2 navbar-toggler navbar-btn" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+							<span class="nav-icon navbar-toggler-icon navbar-light"></span>
+						</button>
+					</div>
 					<div class="nav-flex-1 hide-lg">
 						<ul class=" navbar-nav justify-content-end m-0">
 							<li class="navbar-item ps-4"><a class="nav-link active" href="">Home</a></li>
@@ -48,38 +50,56 @@
 				</div>
 			</nav>
 
-
 		</div>
 
 	</section>
 
 
-		<section class="sec2">
-			<div class="leftright-wrapper">
-				<div class="left">
-					<div class="photo">photo placeholder</div>
+	<section class="sec-2 container-fluid d-flex flex-column w-100 p-0">
+			<div class="row left-right-wrapper p-0 m-0">
+				<div class="left col-lg-6 p-4 d-flex flex-column justify-content-center align-items-center">
+					<div class="photo"><img src="./src/GIFFINAL-1.gif" class="img-fluid headshot" alt="Italian Trulli"></div>
+					<div class="background-fluorish testr"></div>
 				</div>
-				<div class="right">
-						<div class="AboutMe "><h1>About me</h1></div>
-						<div class="sec2-content ">
-							<p class="indent " align="justify"> <!--set max-width in container so text stays within-->
+				<div class="right col-lg-6 gap-5 d-flex flex-column p-4 justify-content-center">
+						<div class="AboutMe display-3">About me</div>
+						<div class="sec2-content">
+							<p class="indent " align="left"> <!--set max-width in container so text stays within-->
 								Hello! I'm Chu Chen. I'm an optical transmisison engineer by day, and an aspiring cloud engineer and solutions architect by night.
 								I'm a certified AWS solutions architect equipped with the knowledge of designing, developing and maintaining
 								secure and highly-available cloud infrastructures that follows industry best practices.
 							</p>
-							<p class="indent " align="justify">
+							<p class="indent " align="left">
 								As such, I created this website to use as a sandbox to implement a cloud-based backend infrastructure, and to also improve on my front-end development skills.
 								This website is designed to be fully hosted in the cloud with a serverless architecture and in a highly-redundant manner (technical details can be found on the next page).
 							</p>
-							<p class="indent " align="justify">
+							<h3>Available for hire !</h3>
+							<p class="indent " align="left">
 								I'm open to work and looking for an opportunity to enter the cloud industry. Please reach out to me at 
 								<a class="mail" href = "mailto: kevinchuchen@gmail.com">kevinchuchen@gmail.com</a> !
 							</p>
 						</div>
 				</div>
 			</div>
-			<div class="downarrow-sec2"><img src="./src/keyboard_arrow_down_white_36dp.svg" alt="down arrow"></div>
+			<div class="downarrow-container w-100 p-0 m-0 bg-transparent text-center">
+				<div class="downarrow-sec2 "><img src="./src/keyboard_arrow_down_white_36dp.svg" alt="down arrow"></div>
+			</div>
+
+	</section>
+
+		<section class="sec3">
+		  <div style="height:40vh;width:40vh;background:transparent;border:5vh solid yellow;"></div>
 		</section>
+		  
+		  <section class="sec4">
+		  <div style="height:40vh;width:40vh;background:transparent;border:5vh solid black;"></div>
+		</section>
+	  
+	</div>
+	<script src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/scrollify/1.0.21/jquery.scrollify.min.js" integrity="sha512-UyX8JsMsNRW1cYl8BoxpcamonpwU2y7mSTsN0Z52plp7oKo1u92Xqfpv6lOlTyH3yiMXK+gU1jw0DVCsPTfKew==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+	<script src="script.js" ></script>
 
 		<section class="sec3">
 		  <div style="height:40vh;width:40vh;background:transparent;border:5vh solid yellow;"></div>

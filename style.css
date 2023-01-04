@@ -11,7 +11,8 @@ font-family: 'Permanent Marker', cursive;
 	--bg-black3: #353839;
 	--bg-black4: #3b444b;
 	--bg-black5: #414a4c;
-	--grey-white: #D3D3D3
+	--grey-white: #D3D3D3;
+	--dark-green: #1DB954
 }
 /*
 background color
@@ -21,6 +22,9 @@ accent color
 #red, purple, dark blue, light blue, terqoiz, green, spotify green
 */
 
+body, html {
+	height:100%;
+}
 .testr {
 	border: 1px solid red;
 }
@@ -37,19 +41,56 @@ accent color
 .downarrow-sec1{
 	text-align:center;
 }
-.navbar-button{
+.navbar-btn-container{
 	text-align:end;
 }
-.nav-icon{
-	outline:1px solid yellow;
-	border-radius: 5px;
+.navbar-btn-container.navbar-toggler{
+	border: none;
 }
 
-.nav-icon:focus{
-	outline:5px solid red;
-	border-radius: 5px;
+.left{
+	background-color: var(--dark-green);
 }
-@media only screen and (max-width: 992px) { /*hide navbar for small screens*/
+
+.sec-2-wrapper{
+
+}
+.left-right-wrapper{
+	flex:1;
+}
+.downarrow-container{
+
+}
+@media only screen and (min-width: 992px) { /*hide navbar for med and below screens*/
+	.sec-2{
+		position:relative;
+	}
+	.downarrow-container{
+		position:absolute;
+		top:95%;
+		height:100%;
+		background-color:transparent;
+	}
+	.right {
+	}
+	.AboutMe{
+		position: relative;
+		padding: 40px;
+		padding-right: 100px;
+		right: 400px;
+		margin: 0px auto;
+		background-color:var(--bg-black1);
+		border-radius: 100px;
+	}
+}
+.headshot {
+	border-radius: 10%;
+	position:relative;
+	-webkit-box-shadow: -23px 23px 0px 4px #000000; 
+	box-shadow: -23px 23px 0px 4px #137736;
+}
+
+@media only screen and (max-width: 992px) { /*hide navbar for med and below screens*/
 	.hide-lg{
 		display:none;
 	}
