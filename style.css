@@ -21,7 +21,6 @@ accent color
 #391e63,#c2185b,#9c27b0,#5727b0,#272ab0,#276bb0,#57acdc,#57dcbe,#60c689, #1DB954
 #red, purple, dark blue, light blue, terqoiz, green, spotify green
 */
-
 body, html {
 	height:100%;
 }
@@ -75,7 +74,7 @@ body, html {
 	}
 	.AboutMe{
 		position: relative;
-		padding: 40px;
+		padding: 30px;
 		padding-right: 100px;
 		right: 400px;
 		margin: 0px auto;
@@ -87,7 +86,7 @@ body, html {
 	border-radius: 10%;
 	position:relative;
 	-webkit-box-shadow: -23px 23px 0px 4px #000000; 
-	box-shadow: -23px 23px 0px 4px #137736;
+	box-shadow: -0.25rem 0.25rem 0px 0.25rem #137736;
 }
 
 @media only screen and (max-width: 992px) { /*hide navbar for med and below screens*/
