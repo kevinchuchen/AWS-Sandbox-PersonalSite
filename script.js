@@ -8,10 +8,9 @@
 $(function() {
 	$.scrollify({
 		section: "section",
-		scrollSpeed:500,
+		scrollSpeed:200,
 		touchScroll:true,
 		before:function(i,panels){
-			$.scrollify.update()
 			console.log(i);
 			console.log("test");
 			console.log(panels);
