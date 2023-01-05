@@ -13,6 +13,9 @@ $(function() {
 		before:function(i,panels){
 
 			
+		},
+		afterRender:function(i, panels){
+			$.scrollify.update()
 		}
 	});
 });
