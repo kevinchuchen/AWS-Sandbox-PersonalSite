@@ -8,12 +8,10 @@
 $(function() {
 	$.scrollify({
 		section: "section",
-		scrollSpeed:200,
+		scrollSpeed:300,
 		touchScroll:true,
 		before:function(i,panels){
-			console.log(i);
-			console.log("test");
-			console.log(panels);
+
 			
 		}
 	});
