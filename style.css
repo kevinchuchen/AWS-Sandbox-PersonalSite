@@ -49,7 +49,8 @@ font-family: 'Permanent Marker', cursive;
 	--bg-black4: #3b444b;
 	--bg-black5: #414a4c;
 	--grey-white: #D3D3D3;
-	--dark-green: #1DB954
+	--dark-green: #1DB954;
+  --darker-green: #137736;
 }
 /*
 background color
@@ -112,6 +113,8 @@ body, html {
 		background-color:transparent;
 	}
 	.right {
+    display:flex;
+    gap: 2.5rem;
 	}
 	.AboutMe{
 		position: relative;
@@ -154,6 +157,10 @@ section{
 
 
 /*------------Section 3 CSS---------------*/
+.sec3 h5{
+  color:var(--dark-green)
+
+}
 .circle {
   padding: 13px 20px;
   border-radius: 50%;

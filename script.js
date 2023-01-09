@@ -12,11 +12,9 @@ $(function() {
 		easing: "easeOutExpo",
 		touchScroll:true,
 		scrollbars:true,
-		/*
 		afterRender:function(i, panels){
 			$.scrollify.update()
 		}
-		*/
 	});
 });
 

@@ -17,14 +17,14 @@
 	<section class="container-fluid d-flex flex-column justify-content-between w-100 p-0" data-section-name="home">
 		<div class="flex-container"></div>
 		<div class=" d-flex flex-column align-items-center">
-			<div class="h2" id="iam"></div>
-			<div class="display-3 " id="name"></div>
-			<div class="h2" id="title"></div>
+			<div class="h2" id="iam">I am</div>
+			<div class="display-3" id="name">Lim Chu Chen</div>
+			<div class="h1" id="title">Solutions Architech</div>
 		</div>
 
 		<div class="flex-container">
 			<nav class="navbar navbar-expand-lg px-3 navbar-dark m-0">
-				<div class="row w-100 d-flex align-items-end">
+				<div class="row w-100 d-flex align-items-end m-0">
 					<a class="col-4 navbar-brand m-0 ps-3 text-wrap testr" href="#"> Lim Chu Chen </a>
 					<div class="col-4 downarrow-sec1 testg"><img src="./src/keyboard_arrow_down_white_36dp.svg" alt="down arrow"></div>
 					<div class="col-4 flex-container pe-3 navbar-btn-container navbar-toggler testr">
@@ -50,11 +50,11 @@
 	<section class="sec-2 container-fluid d-flex flex-column w-100 p-0" data-section-name="aboutMe">
 			<div class="row left-right-wrapper px-3 m-0">
 				<div class="left col-lg-6 p-4 d-flex flex-column justify-content-center align-items-center">
-					<div class="photo"><img  class="img-fluid headshot" src="./src/oliver-pecker-HONJP8DyiSM-unsplash.jpg" alt="Lim Chu Chen"></div>
+					<div class="photo"><img  class="img-fluid headshot" src="./src/Headshot-EDITED.png" alt="Lim Chu Chen"></div>
 				</div>
-				<div class="right col-lg-6 gap-5 d-flex flex-column p-4 justify-content-center">
-						<div class="AboutMe display-3">About me</div>
-						<div class="sec2-content">
+				<div class="right col-lg-6 d-flex flex-column p-4 justify-content-center">
+						<div class="AboutMe  display-4 font-weight-bold">About me</div>
+						<div class="sec2-content ">
 							<p class="indent " align="left"> <!--set max-width in container so text stays within-->
 								Hello! I'm Chu Chen. I'm an optical transmisison engineer by day, and an aspiring cloud engineer and solutions architect by night.
 								I'm a certified AWS solutions architect equipped with the knowledge of designing, developing and maintaining
@@ -64,7 +64,7 @@
 								As such, I created this website to use as a portfolio/sandbox to implement a cloud-based backend infrastructure, and to also improve on my front-end development skills.
 								This website is designed to be fully hosted in the cloud with a serverless architecture and in a highly-redundant manner (technical details can be found on the next page).
 							</p>
-							<h3>Available for hire !</h3>
+							<h5>Available for hire !</h5>
 							<p class="indent " align="left">
 								I'm open to work and looking for an opportunity to enter the cloud industry. Please reach out to me at 
 								<a class="mail" href = "mailto: kevinchuchen@gmail.com">kevinchuchen@gmail.com</a> !
@@ -77,10 +77,10 @@
 			</div>
 	</section>
 
-	<section class="sec3 w-100" data-section-name="siteArchitecture">
-		<div class="container">
-			<h2 class="pb-3 pt-2 ">Web Dev & Architecture</h2>
-			<p class="pb-5 mb-5 border-bottom"> This site was built as part of a challenge to build a cloud-based portfolio. It serves as a hands-on experience working with the cloud, and allows for deeper understanding of cloud technologies and best practices.
+	<section class="sec3 w-100 " data-section-name="siteArchitecture">
+		<div class="container ">
+			<h2 class="pb-3 pt-5 ">Architectural Roadmap</h2>
+			<p class="pb-5 mb-5 "> This site was built as part of a challenge to build a cloud-based portfolio. It serves as a hands-on experience working with the cloud, and allows for deeper understanding of cloud technologies and best practices.
 				This section shows the various services used to host this site and also the technical implementation details. </p>
 			<!--first section-->
 			<div class="row align-items-center vertical-line d-flex">
@@ -109,7 +109,7 @@
 			  <div class="col-6 text-right">
 				<h5>Hosted in Amazon S3</h5>
 				<p> Since this site does not require any server-side resources, it can be statically hosted in Amazon S3. Amazon S3 is an object-based storage capable of storing large amounts of data in an efficient way.
-				Hosting a static website on S3 can bring many advantages, with the main one being simplicity. S3 offers a managed way to store objects in a highly-scalable, highly-available, resilient and secure manner - all while requiring minimal user configurations.
+				Hosting a static website on S3 can bring many advantages, with the main one being simplicity. S3 offers a managed way to store objects in a highly-scalable, highly-available, resilient and secure manner - all while requiring minimal user configuration.
 				</p>
 			  </div>
 			  <div class="col-2 text-center full d-inline-flex justify-content-center align-items-center">
@@ -135,7 +135,7 @@
 			  </div>
 			  <div class="col-6">
 				<h5>DNS Configuration</h5>
-				<p>Once the objects are uploaded to S3, Route 53 is used to create a custom DNS domain(kevinlim.cc).</p>
+				<p>Once the objects are uploaded to S3, Route 53 is used to create a custom DNS domain. With a custom domain, it allows </p>
 			  </div>
 			</div>
 		</div>
