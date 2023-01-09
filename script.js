@@ -19,3 +19,8 @@ $(function() {
 		*/
 	});
 });
+
+/*
+$(".pagination a").on("click",$.scrollify.move());
+
+*/
