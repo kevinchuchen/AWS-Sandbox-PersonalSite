@@ -8,15 +8,14 @@
 $(function() {
 	$.scrollify({
 		section: "section",
-		scrollSpeed:300,
+		scrollSpeed:1400,
+		easing: "easeOutExpo",
 		touchScroll:true,
-		before:function(i,panels){
-
-			
-		},
+		scrollbars:true,
+		/*
 		afterRender:function(i, panels){
 			$.scrollify.update()
 		}
+		*/
 	});
 });
-
