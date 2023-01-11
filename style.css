@@ -71,6 +71,9 @@ body, html {
 .testb {
 	border: 1px solid blue;
 }
+.testy {
+	border: 1px solid yellow;
+}
 .nav-flex-1{
 	flex:1;
 	width:0;
@@ -83,6 +86,9 @@ body, html {
 }
 .navbar-btn-container.navbar-toggler{
 	border: none;
+}
+.navbar-btn:focus{
+	outline: 3px solid var(--dark-green) !important;
 }
 
 .left{
@@ -97,7 +103,7 @@ body, html {
 	flex:1;
 }
 .downarrow-container{
-
+	
 }
 @media only screen and (min-width: 992px) { /*hide navbar for med and below screens*/
 	.sec2-content{
@@ -109,12 +115,11 @@ body, html {
 	.downarrow-container{
 		position:absolute;
 		top:95%;
-		height:100%;
 		background-color:transparent;
 	}
 	.right {
-    display:flex;
-    gap: 2.5rem;
+		display:flex;
+		gap: 2.5rem;
 	}
 	.AboutMe{
 		position: relative;
@@ -184,9 +189,13 @@ section{
   left: 50%;
   top: 50%;
 }
-.vertical-line.row .col-2.full::after {
+.vertical-line.row .col-2.full-even::after {
   height: 100%;
   left: calc(50% - 3px);
+}
+.vertical-line.row .col-2.full-odd::after {
+  height: 100%;
+  left: calc(50%);
 }
 .vertical-line.row .col-2.top::after {
   height: 50%;
