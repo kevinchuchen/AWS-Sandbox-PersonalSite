@@ -4,51 +4,41 @@
 	<title>Lim Chu Chen</title>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
-
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">	
 	<link rel="stylesheet" href="style.css">
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@200;400;500;800&family=Nunito+Sans:wght@700&family=Open+Sans:wght@700&family=Permanent+Marker&display=swap" rel="stylesheet">
-	<link rel="stylesheet" type="text/css" href="./src/fullpage.css" />
 </head>
 <body>
 
-<div class="main" id="fullpage">
-	<section class="section section-1 testg d-flex flex-column justify-content-between w-100">
-		<div class="flex-container testr">
-			<div class=" d-flex flex-column align-items-center">
-				<div class="display-6" id="iam">I am</div>
-				<div class="display-1 fw-bold" id="name">Lim Chu Chen</div>
-				<div class="display-6" id="title">Solutions Architect</div>
-			</div>
+<div class="main">
+	<section class="container-fluid d-flex flex-column justify-content-between w-100 p-0" data-section-name="home">
+		<div class="flex-container"></div>
+		<div class=" d-flex flex-column align-items-center">
+			<div class="h2" id="iam"></div>
+			<div class="display-3" id="name"></div>
+			<div class="h1" id="title"></div>
 		</div>
-    
-		<div class="flex-container testg">
+
+		<div class="flex-container">
 			<nav class="navbar navbar-expand-lg px-3 navbar-dark m-0">
-				<div class="w-100 d-flex align-items-end">
-					<a class="logo navbar-brand nav-flex-1 m-0 ps-3 text-wrap" href="#"> Lim Chu Chen </a>
-					<div class="downarrow-sec1 nav-flex-1 "><img src="./src/keyboard_arrow_down_white_36dp.svg" alt="down arrow"></div>
-					<div class="flex-container nav-flex-1 pe-3 navbar-btn-container navbar-toggler">
-						<button class="p-2 navbar-toggler navbar-btn" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+				<div class="row w-100 d-flex align-items-end m-0">
+					<a class="col-4 navbar-brand m-0 ps-3 text-wrap" href="https://www.kevinlim.cc"> Lim Chu Chen </a>
+					<div class="col-4 downarrow-sec1 "><img src="./src/keyboard_arrow_down_white_36dp.svg" alt="down arrow"></div>
+					<div class="col-4 flex-container pe-3 navbar-btn-container navbar-toggler">
+						<button class="p-2 navbar-toggler navbar-btn" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
 							<span class="nav-icon navbar-toggler-icon navbar-light"></span>
 						</button>
 					</div>
-					<div class="nav-flex-1 hide-lg">
-						<ul class=" navbar-nav justify-content-end m-0">
-							<li class="navbar-item ps-4"><a class="nav-link active" href="">Home</a></li>
-							<li class="navbar-item ps-4"><a class="nav-link" href="">About Me</a></li>
-							<li class="navbar-item ps-4"><a class="nav-link" href="">Portfolio</a></li>
+
+					<div class="col-4 collapse navbar-collapse m-0 justify-content-end d-flex"  id="navbarTogglerDemo03">
+						<ul class="navbar-nav pagination testy">
+							<li class="navbar-item px-4 testr"><a class="nav-link active" href="#home">Home</a></li>
+							<li class="navbar-item px-4 testr"><a class="nav-link" href="#aboutMe">About Me</a></li>
+							<li class="navbar-item px-4 testr"><a class="nav-link" href="#siteArchitecture">Architecture</a></li>
 						</ul>
 					</div>
-				</div>
-
-				<div class="collapse m-0"  id="navbarTogglerDemo02">
-					<ul class=" navbar-nav justify-content-end m-0">
-						<li class="navbar-item ps-4"><a class="nav-link active" href="">Home</a></li>
-						<li class="navbar-item ps-4"><a class="nav-link" href="">About Me</a></li>
-						<li class="navbar-item ps-4"><a class="nav-link" href="">Portfolio</a></li>
-					</ul>
 				</div>
 			</nav>
 
@@ -56,54 +46,173 @@
 
 	</section>
 
-
-	<section class="section sec-2 container-fluid d-flex flex-column w-100 p-0">
-			<div class="row left-right-wrapper p-0 m-0">
+	<section class="sec-2 container-fluid d-flex flex-column w-100 p-0" data-section-name="aboutMe">
+			<div class="row left-right-wrapper px-3 m-0">
 				<div class="left col-lg-6 p-4 d-flex flex-column justify-content-center align-items-center">
-					<div class="photo"><img src="./src/GIFFINAL-1.gif" class="img-fluid headshot" alt="Italian Trulli"></div>
-					<div class="background-fluorish testr"></div>
+					<div class="photo"><img  class="img-fluid headshot" src="./src/Headshot-EDITED.png" alt="Lim Chu Chen"></div>
 				</div>
-				<div class="right col-lg-6 gap-5 d-flex flex-column p-4 justify-content-center">
-						<div class="AboutMe display-3">About me</div>
-						<div class="sec2-content">
-							<p class="indent " align="left"> <!--set max-width in container so text stays within-->
-								Hello! I'm Chu Chen. I'm an optical transmisison engineer by day, and an aspiring cloud engineer and solutions architect by night.
-								I'm a certified AWS solutions architect equipped with the knowledge of designing, developing and maintaining
-								secure and highly-available cloud infrastructures that follows industry best practices.
-							</p>
-							<p class="indent " align="left">
-								As such, I created this website to use as a sandbox to implement a cloud-based backend infrastructure, and to also improve on my front-end development skills.
-								This website is designed to be fully hosted in the cloud with a serverless architecture and in a highly-redundant manner (technical details can be found on the next page).
-							</p>
-							<h3>Available for hire !</h3>
-							<p class="indent " align="left">
-								I'm open to work and looking for an opportunity to enter the cloud industry. Please reach out to me at 
-								<a class="mail" href = "mailto: kevinchuchen@gmail.com">kevinchuchen@gmail.com</a> !
-							</p>
-						</div>
+				<div class="right col-lg-6 d-flex flex-column p-4 justify-content-center">
+					<div class="AboutMe  display-4 font-weight-bold">About me</div>
+					<div class="sec2-content ">
+						<p class="indent " align="left"> <!--set max-width in container so text stays within-->
+							Hello! I'm Chu Chen. I'm an optical transmisison engineer by day, and an aspiring cloud engineer and solutions architect by night.
+							I'm a certified AWS solutions architect equipped with the knowledge of designing, developing and maintaining
+							secure and highly-available cloud infrastructures that follows industry best practices.
+						</p>
+						<p class="indent " align="left">
+							As such, I created this website to use as a portfolio/sandbox to implement a cloud-based backend infrastructure, and to also improve on my front-end development skills.
+							This website is designed to be fully hosted in the cloud with a serverless architecture and in a highly-redundant manner (technical details can be found on the next page).
+						</p>
+						<h5>Available for hire !</h5>
+						<p class="indent " align="left">
+							I'm open to work and looking for an opportunity to enter the cloud industry. Please reach out to me at 
+							<a class="mail" href = "mailto: kevinchuchen@gmail.com">kevinchuchen@gmail.com</a> !
+						</p>
+					</div>
 				</div>
 			</div>
-			<div class="downarrow-container w-100 p-0 m-0 bg-transparent text-center">
+			<div class="downarrow-container w-100 p-0 m-0 bg-transparent text-center testg">
 				<div class="downarrow-sec2 "><img src="./src/keyboard_arrow_down_white_36dp.svg" alt="down arrow"></div>
 			</div>
-
 	</section>
 
-	<section class="section sec3">
-		<div style="height:40vh;width:40vh;background:transparent;border:5vh solid yellow;"></div>
+	<section class="sec3 w-100 testr" data-section-name="siteArchitecture">
+		<div class="container testb">
+			<h2 class="pb-3 pt-5 ">Architectural Roadmap</h2>
+			<p class="pb-5 mb-5 "> This site was built as part of a challenge to build a cloud-based portfolio. It serves as a hands-on experience working with the cloud, and allows for deeper understanding of cloud technologies and best practices.
+				This section shows the various services used to host this site and also the technical implementation details. </p>
+			<!--first section-->
+			<div class="row align-items-center vertical-line d-flex">
+			  <div class="col-2 text-center bottom d-inline-flex justify-content-center align-items-center">
+				<div class="circle font-weight-bold">1</div>
+			  </div>
+			  <div class="col-6">
+				<h5>Fully Responsive</h5>
+				<p>This website starts with being built in a responsive manner, allowing the elements to stack and change in response to the screen size. Go ahead, try it out !</p>
+			  </div>
+			</div>
+			<!--path between 1-2-->
+			<div class="row timeline">
+			  <div class="col-2">
+				<div class="corner top-right"></div>
+			  </div>
+			  <div class="col-8">
+				<hr/>
+			  </div>
+			  <div class="col-2">
+				<div class="corner left-bottom"></div>
+			  </div>
+			</div>
+			<!--second section-->
+			<div class="row align-items-center justify-content-end vertical-line d-flex">
+			  <div class="col-6 text-right">
+				<h5>Hosted in Amazon S3</h5>
+				<p> Since this site does not require any server-side resources, it can be statically hosted in Amazon S3. Amazon S3 is an object-based storage capable of storing large amounts of data in an efficient way.
+				Hosting a static website on S3 can bring many advantages, with the main one being simplicity. S3 offers a managed way to store objects in a highly-scalable, highly-available, resilient and secure manner - all while requiring minimal user configuration.
+				</p>
+			  </div>
+			  <div class="col-2 text-center full-even d-inline-flex justify-content-center align-items-center">
+				<div class="circle font-weight-bold">2</div>
+			  </div>
+			</div>
+			<!--path between 2-3-->
+			<div class="row timeline">
+			  <div class="col-2">
+				<div class="corner right-bottom"></div>
+			  </div>
+			  <div class="col-8">
+				<hr/>
+			  </div>
+			  <div class="col-2">
+				<div class="corner top-left"></div>
+			  </div>
+			</div>
+			<!--third section-->
+			<div class="row align-items-center vertical-line d-flex">
+			  <div class="col-2 text-center full-odd d-inline-flex justify-content-center align-items-center">
+				<div class="circle font-weight-bold">3</div>
+			  </div>
+			  <div class="col-6">
+				<h5>DNS Configuration</h5>
+				<p>Once the objects are uploaded to S3, Route 53 is used to register a custom DNS domain and also to provide DNS routing services. 
+				Using Route 53 allows for a seamless DNS integration between AWS services, including S3. Not only that, Route 53 can also verify server reachability via resource healthchecks and route traffic away from unhealthy resources.</p>
+			  </div>
+			</div>
+			<!--path between 3-4 -->
+			<div class="row timeline">
+			  <div class="col-2">
+				<div class="corner top-right"></div>
+			  </div>
+			  <div class="col-8">
+				<hr/>
+			  </div>
+			  <div class="col-2">
+				<div class="corner left-bottom"></div>
+			  </div>
+			</div>
+			<!--fourth section-->
+			<div class="row align-items-center justify-content-end vertical-line d-flex">
+			  <div class="col-6 text-right">
+				<h5>Content Delivery Network</h5>
+				<p> To speed up the content loading and distribution of this site to a global scale, this site is configured on Amazon's CloudFront network. 
+				Amazon CloudFront is a content delivery network (CDN) which provides global content caching by leveraging hundreds of Amazon's distributed edge locations to provide low-latency and high content access speed for users.
+				Not only that, CloudFront is used together with AWS Certificate Manager(ACM) to provision and deploy SSL/TLS certificate to enhance this site's security by prodiving an encrypted tunnel for sending data from the web server to the client via HTTPS.
+				</p>
+			  </div>
+			  <div class="col-2 text-center full-even d-inline-flex justify-content-center align-items-center">
+				<div class="circle font-weight-bold">4</div>
+			  </div>
+			</div>
+			<!--path between 4-5-->
+			<div class="row timeline">
+			  <div class="col-2">
+				<div class="corner right-bottom"></div>
+			  </div>
+			  <div class="col-8">
+				<hr/>
+			  </div>
+			  <div class="col-2">
+				<div class="corner top-left"></div>
+			  </div>
+			</div>
+			<!--fifth section-->
+			<div class="row align-items-center vertical-line d-flex">
+			  <div class="col-2 text-center full-odd d-inline-flex justify-content-center align-items-center">
+				<div class="circle font-weight-bold">5</div>
+			  </div>
+			  <div class="col-6">
+				<h5>CI/CD Pipeline(Front end)</h5>
+				<p>Continuous integration & deployment methods using Git and AWS Codepipeline are also used to simplify deployment and testing. This means that code can be pushed straight to my Git repository, and AWS Codepipeline automatically updates the s3 bucket with the latest version of code.
+				Apart from providing version control, Git can also be used to invalidate CloudFront caches via Git Actions so that the site can be updated almost immediately after the code is pushed into the main branch.
+				</p>
+			  </div>
+			</div>
+			<!--path between 5-6 -->
+			<div class="row timeline">
+			  <div class="col-2">
+				<div class="corner top-right"></div>
+			  </div>
+			  <div class="col-8">
+				<hr/>
+			  </div>
+			  <div class="col-2">
+				<div class="corner left-bottom"></div>
+			  </div>
+			</div>
+		</div>
 	</section>
-		
-		<section class="section sec4">
-		<div style="height:40vh;width:40vh;background:transparent;border:5vh solid black;"></div>
+	  
+	  <section class="sec4">
+	  <div style="height:40vh;width:40vh;background:transparent;border:5vh solid black;"></div>
 	</section>
 	  
 </div>
 
-	<script src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
-	<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
-	<script type="text/javascript" src="./src/fullpage.js"></script>
-	<script src="script.js" ></script>
-	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/scrollify/1.0.21/jquery.scrollify.min.js" integrity="sha512-UyX8JsMsNRW1cYl8BoxpcamonpwU2y7mSTsN0Z52plp7oKo1u92Xqfpv6lOlTyH3yiMXK+gU1jw0DVCsPTfKew==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="script.js" ></script>
 
 </body>
 </html>

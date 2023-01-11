@@ -5,7 +5,42 @@ font-family: 'Nunito Sans', sans-serif;
 font-family: 'Open Sans', sans-serif;
 font-family: 'Permanent Marker', cursive;
 */
-
+@media (max-width: 1200px) {
+  legend {
+    font-size: calc(1.275rem + 0.3vw);
+  }
+  h1,
+  .h1 {
+    font-size: calc(1.375rem + 1.5vw);
+  }
+  h2,
+  .h2 {
+    font-size: calc(1.325rem + 0.9vw);
+  }
+  h3,
+  .h3 {
+    font-size: calc(1.3rem + 0.6vw);
+  }
+  h4,
+  .h4 {
+    font-size: calc(1.275rem + 0.3vw);
+  }
+  .display-1 {
+    font-size: calc(1.725rem + 5.7vw);
+  }
+  .display-2 {
+    font-size: calc(1.675rem + 5.1vw);
+  }
+  .display-3 {
+    font-size: calc(1.575rem + 3.9vw);
+  }
+  .display-4 {
+    font-size: calc(1.475rem + 2.7vw);
+  }
+  .close {
+    font-size: calc(1.275rem + 0.3vw);
+  }
+}
 
 :root {
 	--bg-black1: #0e1111;
@@ -14,7 +49,8 @@ font-family: 'Permanent Marker', cursive;
 	--bg-black4: #3b444b;
 	--bg-black5: #414a4c;
 	--grey-white: #D3D3D3;
-	--dark-green: #1DB954
+	--dark-green: #1DB954;
+  --darker-green: #137736;
 }
 /*
 background color
@@ -23,12 +59,8 @@ accent color
 #391e63,#c2185b,#9c27b0,#5727b0,#272ab0,#276bb0,#57acdc,#57dcbe,#60c689, #1DB954
 #red, purple, dark blue, light blue, terqoiz, green, spotify green
 */
-
 body, html {
 	height:100%;
-}
-.main {
-	border:1px solid white;
 }
 .testr {
 	border: 1px solid red;
@@ -38,6 +70,9 @@ body, html {
 }
 .testb {
 	border: 1px solid blue;
+}
+.testy {
+	border: 1px solid yellow;
 }
 .nav-flex-1{
 	flex:1;
@@ -52,34 +87,45 @@ body, html {
 .navbar-btn-container.navbar-toggler{
 	border: none;
 }
+.navbar-btn:focus{
+	outline: 3px solid var(--dark-green) !important;
+}
 
 .left{
 	background-color: var(--dark-green);
 }
 
+
+.mail{
+	color: var(--dark-green);
+}
 .left-right-wrapper{
 	flex:1;
 }
 .downarrow-container{
-
+	
 }
 @media only screen and (min-width: 992px) { /*hide navbar for med and below screens*/
+	.sec2-content{
+		padding: 0px 2rem;
+	}
 	.sec-2{
 		position:relative;
 	}
 	.downarrow-container{
 		position:absolute;
 		top:95%;
-		height:100%;
 		background-color:transparent;
 	}
 	.right {
+		display:flex;
+		gap: 2.5rem;
 	}
 	.AboutMe{
 		position: relative;
-		padding: 40px;
+		padding: 30px;
 		padding-right: 100px;
-		right: 400px;
+		right: 50%;
 		margin: 0px auto;
 		background-color:var(--bg-black1);
 		border-radius: 100px;
@@ -89,7 +135,7 @@ body, html {
 	border-radius: 10%;
 	position:relative;
 	-webkit-box-shadow: -23px 23px 0px 4px #000000; 
-	box-shadow: -23px 23px 0px 4px #137736;
+	box-shadow: -0.25rem 0.25rem 0px 0.25rem #137736;
 }
 
 @media only screen and (max-width: 992px) { /*hide navbar for med and below screens*/
@@ -113,6 +159,84 @@ section{
 	color: #1DB954
 }
 
-.mail{
-	color:var(--dark-green);
+
+
+/*------------Section 3 CSS---------------*/
+.sec3 h5{
+  color:var(--dark-green)
+
+}
+.circle {
+  padding: 13px 20px;
+  border-radius: 50%;
+  background-color: var(--dark-green);
+  color: #fff;
+  max-height: 50px;
+  z-index: 2;
+}
+
+.vertical-line.row .col-2 {
+  align-self: stretch;
+}
+.vertical-line.row .col-2::after {
+  content: "";
+  position: absolute;
+  border-left: 3px solid var(--dark-green);
+  z-index: 1;
+}
+.vertical-line.row .col-2.bottom::after {
+  height: 50%;
+  left: 50%;
+  top: 50%;
+}
+.vertical-line.row .col-2.full-even::after {
+  height: 100%;
+  left: calc(50% - 3px);
+}
+.vertical-line.row .col-2.full-odd::after {
+  height: 100%;
+  left: calc(50%);
+}
+.vertical-line.row .col-2.top::after {
+  height: 50%;
+  left: 50%;
+  top: 0;
+}
+
+
+.timeline div {
+  padding: 0;
+  height: 40px;
+}
+.timeline hr {
+  border-top: 3px solid var(--dark-green);
+  margin: 0;
+  top: 17px;
+  position: relative;
+}
+.timeline .col-2 {
+  display: flex;
+  overflow: hidden;
+}
+.timeline .corner {
+  border: 3px solid var(--dark-green);
+  width: 100%;
+  position: relative;
+  border-radius: 15px;
+}
+.timeline .top-right {
+  left: 50%;
+  top: -50%;
+}
+.timeline .left-bottom {
+  left: -50%;
+  top: calc(50% - 3px);
+}
+.timeline .top-left {
+  left: -50%;
+  top: -50%;
+}
+.timeline .right-bottom {
+  left: 50%;
+  top: calc(50% - 3px);
 }
