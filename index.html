@@ -17,9 +17,9 @@
 	<section class="container-fluid d-flex flex-column justify-content-between w-100 p-0" data-section-name="home">
 		<div class="flex-container"></div>
 		<div class=" d-flex flex-column align-items-center">
-			<div class="h2" id="iam"></div>
-			<div class="display-3" id="name"></div>
-			<div class="h1" id="title"></div>
+			<div class="h2" id="iam">I am</div>
+			<div class="display-3" id="name">Lim Chu Chen</div>
+			<div class="h1" id="title">Cloud Architech</div>
 		</div>
 
 		<div class="flex-container">
@@ -85,7 +85,7 @@
 			  <div class="col-2 text-center bottom d-inline-flex justify-content-center align-items-center">
 				<div class="circle font-weight-bold">1</div>
 			  </div>
-			  <div class="col-6">
+			  <div class="col-md-6 col-10">
 				<h5>Fully Responsive</h5>
 				<p>This website starts with being built in a responsive manner, allowing the elements to stack and change in response to the screen size. Go ahead, try it out !</p>
 			  </div>
@@ -104,15 +104,16 @@
 			</div>
 			<!--second section-->
 			<div class="row align-items-center justify-content-end vertical-line d-flex">
-			  <div class="col-6 text-right">
-				<h5>Hosted in Amazon S3</h5>
-				<p> Since this site does not require any server-side resources, it can be statically hosted in Amazon S3. Amazon S3 is an object-based storage capable of storing large amounts of data in an efficient way.
-				Hosting a static website on S3 can bring many advantages, with the main one being simplicity. S3 offers a managed way to store objects in a highly-scalable, highly-available, resilient and secure manner - all while requiring minimal user configuration.
-				</p>
-			  </div>
-			  <div class="col-2 text-center full-even d-inline-flex justify-content-center align-items-center">
-				<div class="circle font-weight-bold">2</div>
-			  </div>
+				<div class="col-2 order-last text-center full-even d-inline-flex justify-content-center align-items-center">
+					<div class="circle font-weight-bold">2</div>
+				</div>
+				<div class="col-md-6 col-10 text-right">
+					<h5>Hosted in Amazon S3</h5>
+					<p> Since this site does not require any server-side resources, it can be statically hosted in Amazon S3. Amazon S3 is an object-based storage capable of storing large amounts of data in an efficient way.
+					Hosting a static website on S3 can bring many advantages, with the main one being simplicity. S3 offers a managed way to store objects in a highly-scalable, highly-available, resilient and secure manner - all while requiring minimal user configuration.
+					</p>
+				</div>
+
 			</div>
 			<!--path between 2-3-->
 			<div class="row timeline">
@@ -131,7 +132,7 @@
 			  <div class="col-2 text-center full-odd d-inline-flex justify-content-center align-items-center">
 				<div class="circle font-weight-bold">3</div>
 			  </div>
-			  <div class="col-6">
+			  <div class="col-md-6 col-10 ">
 				<h5>DNS Configuration</h5>
 				<p>Once the objects are uploaded to S3, Route 53 is used to register a custom DNS domain and also to provide DNS routing services. 
 				Using Route 53 allows for a seamless DNS integration between AWS services, including S3. Not only that, Route 53 can also verify server reachability via resource healthchecks and route traffic away from unhealthy resources.</p>
@@ -151,7 +152,7 @@
 			</div>
 			<!--fourth section-->
 			<div class="row align-items-center justify-content-end vertical-line d-flex">
-			  <div class="col-6 text-right">
+			  <div class="col-md-6 col-10 text-right">
 				<h5>Content Delivery Network</h5>
 				<p> To speed up the content loading and distribution of this site to a global scale, this site is configured on Amazon's CloudFront network. 
 				Amazon CloudFront is a content delivery network (CDN) which provides global content caching by leveraging hundreds of Amazon's distributed edge locations to provide low-latency and high content access speed for users.
@@ -179,7 +180,7 @@
 			  <div class="col-2 text-center full-odd d-inline-flex justify-content-center align-items-center">
 				<div class="circle font-weight-bold">5</div>
 			  </div>
-			  <div class="col-6">
+			  <div class="col-md-6 col-10 ">
 				<h5>CI/CD Pipeline(Front end)</h5>
 				<p>Continuous integration & deployment methods using Git and AWS Codepipeline are also used to simplify deployment and testing. This means that code can be pushed straight to my Git repository, and AWS Codepipeline automatically updates the s3 bucket with the latest version of code.
 				Apart from providing version control, Git can also be used to invalidate CloudFront caches via Git Actions so that the site can be updated almost immediately after the code is pushed into the main branch.
