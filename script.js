@@ -38,9 +38,8 @@ var HttpClient = function() {
 var client = new HttpClient();
 client.get('https://5qrbpd5xb9.execute-api.us-east-1.amazonaws.com/default/incrementViewCount', function(response) {
     // do something with response
-	pageView = "Page view: " + String(response); 
+	pageView = "Page views: " + String(response); 
 	document.getElementById("pageview").textContent= pageView;
-
-	alert(response);
 	console.log(response);
 });
+
