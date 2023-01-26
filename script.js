@@ -36,7 +36,7 @@ var HttpClient = function() {
 }
 
 var client = new HttpClient();
-client.get('api.kevinlim.cc/incrementViewCount',function(response) {
+client.get('https://api.kevinlim.cc/incrementViewCount',function(response) {
 //https://5qrbpd5xb9.execute-api.us-east-1.amazonaws.com/default/incrementViewCount'
     // update page view with custom API call
 	pageView = "Page views: " + String(response); 
