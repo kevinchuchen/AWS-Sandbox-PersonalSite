@@ -18,7 +18,7 @@
 		<div class="text-right p-4 pb-0" id="pageview"></div>
 		<div class=" d-flex flex-column align-items-center">
 			<div class="h2" id="iam">I am</div>
-			<div class="display-3" id="name"></div>
+			<div class="display-3" id="name">Lim Chu Chen</div>
 			<div class="h1" id="title">Cloud Architech</div>
 		</div>
 
@@ -70,13 +70,13 @@
 					</div>
 				</div>
 			</div>
-			<div class="downarrow-container w-100 p-0 m-0 bg-transparent text-center testg">
+			<div class="downarrow-container w-100 p-0 m-0 bg-transparent text-center ">
 				<div class="downarrow-sec2 "><img src="./src/keyboard_arrow_down_white_36dp.svg" alt="down arrow"></div>
 			</div>
 	</section>
 
-	<section class="sec3 w-100 testr" data-section-name="siteArchitecture">
-		<div class="container testb">
+	<section class="sec3 w-100 " data-section-name="siteArchitecture">
+		<div class="container ">
 			<h2 class="pb-3 pt-5 ">Architectural Roadmap</h2>
 			<p class="pb-5 mb-5 "> This site was built as part of a challenge to build a cloud-based portfolio. It serves as a hands-on experience working with the cloud, and allows for deeper understanding of cloud technologies and best practices.
 				This section shows the various services used to host this site and also the technical implementation details. </p>
@@ -199,6 +199,32 @@
 				<div class="corner left-bottom"></div>
 			  </div>
 			</div>
+			<!--6th section-->
+			<div class="row align-items-center justify-content-end vertical-line d-flex">
+				<div class="col-md-6 col-10 text-right">
+					<h5>Custom API/Lambda function with AWS DynamoDB view counter</h5>
+					<p> 
+						The view counter on the home page of this site is updated everytime the webpage is refreshed. This is accomplished via a 
+						custom API created in API Gateway. Everytime the API endpoint is called, a lambda function is invoked to update a dynamoDB 
+						table with an updated view count and returning the value to the frontend (To prevent spams, the API is rate-limited).
+					</p>
+				</div>
+				<div class="col-2 text-center full-even d-inline-flex justify-content-center align-items-center">
+					<div class="circle font-weight-bold">6</div>
+				</div>
+				</div>
+				<!--path between 6-7 -->
+				<div class="row timeline">
+				<div class="col-2">
+					<div class="corner right-bottom"></div>
+				</div>
+				<div class="col-8">
+					<hr/>
+				</div>
+				<div class="col-2">
+					<div class="corner top-left"></div>
+				</div>
+				</div>
 		</div>
 	</section>
 	  
