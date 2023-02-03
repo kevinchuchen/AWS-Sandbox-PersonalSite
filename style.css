@@ -5,6 +5,9 @@ font-family: 'Nunito Sans', sans-serif;
 font-family: 'Open Sans', sans-serif;
 font-family: 'Permanent Marker', cursive;
 */
+
+/*------------Adds Text Responsiveness---------------*/
+
 @media (max-width: 1200px) {
   legend {
     font-size: calc(1.275rem + 0.3vw);
@@ -75,10 +78,36 @@ body, html {
 .testy {
 	border: 1px solid yellow;
 }
-.nav-flex-1{
-	flex:1;
-	width:0;
+section{
+	background: var(--bg-black1);
+	font-family: 'Hanken Grotesk', sans-serif;
+	color:white;
 }
+/*------------Page 1 CSS---------------*/
+
+@media only screen and (max-width: 992px) { /*hide navbar for med and below screens*/
+	.hide-lg{
+		display:none;
+	}
+}
+
+.sec-1{
+  background: linear-gradient(rgba(0,0,0,.5), rgba(0,0,0,.5)),url("./src/daniel-leone-v7daTKlZzaw-unsplash.jpg") no-repeat center center fixed;
+	background-repeat:repeat;
+	background-size: cover;
+}
+
+
+#iam{
+	font-family: 'Permanent Marker', cursive;
+}
+#name{
+	font-family: 'Hanken Grotesk', sans-serif;
+}
+#title{
+	color: #1DB954
+}
+
 .downarrow-sec1{
 	text-align:center;
 }
@@ -91,40 +120,41 @@ body, html {
 .navbar-btn:focus{
 	outline: 3px solid var(--dark-green) !important;
 }
-
-.left{
-	background-color: var(--dark-green);
-}
-
 .socials{
   display:flex;
   gap: 15px;
 }
 .social{
   fill:var(--bg-black5);
-  stroke:var(--bg-black5);
   height:30px;
   width:30px;
 }
 .social:hover {
-  fill:var(--dark-green);
-  stroke:#137736;
+  fill:var(--grey-white);
   transform: scale(1.25)
 }
+/*------------Page 2 CSS---------------*/
+.left{
+	background-color: var(--dark-green);
+}
+
 .mail{
 	color: var(--dark-green);
 }
 .left-right-wrapper{
 	flex:1;
 }
-
+.AboutMe{
+  padding-bottom:20px;
+}
 @media only screen and (min-width: 992px) { /*hide navbar for med and below screens*/
 	.sec2-content{
 		padding: 0px 2rem;
 	}
 	.sec-2{
 		position:relative;
-    background: var(--darkest-green);
+    background-color:var(--bg-black1);
+
 	}
 	.downarrow-container{
 		position:absolute;
@@ -137,11 +167,11 @@ body, html {
 	}
 	.AboutMe{
 		position: relative;
-		padding: 30px;
-		padding-right: 100px;
+		padding: 35px;
+    padding-left: 40px;
 		right: 50%;
 		margin: 0px auto;
-		background-color:var(--darkest-green);
+		background-color:var(--bg-black1);
 		border-radius: 100px;
 	}
 }
@@ -152,33 +182,17 @@ body, html {
 	box-shadow: -0.25rem 0.25rem 0px 0.25rem #137736;
 }
 
-@media only screen and (max-width: 992px) { /*hide navbar for med and below screens*/
-	.hide-lg{
-		display:none;
-	}
-}
-
-section{
-	background: var(--bg-black1);
-	font-family: 'Hanken Grotesk', sans-serif;
-	color:white;
-}
-#iam{
-	font-family: 'Permanent Marker', cursive;
-}
-#name{
-	font-family: 'Hanken Grotesk', sans-serif;
-}
-#title{
-	color: #1DB954
-}
 
 
 
-/*------------Section 3 CSS---------------*/
+/*------------Page 3 CSS---------------*/
 .sec3 h5{
   color:var(--dark-green)
 
+}
+.sec3{
+  background: rgb(14,17,17);
+  background: linear-gradient(180deg, rgba(14,17,17,1) 17%, rgba(6,40,5,1) 46%, rgba(7,46,6,1) 72%, rgba(10,63,8,1) 100%);
 }
 .circle {
   padding: 13px 20px;
