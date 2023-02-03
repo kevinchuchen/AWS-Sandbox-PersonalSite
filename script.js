@@ -1,9 +1,12 @@
 //TODO :	DONE--rewrite focus on navbutton
 //			DONE--clean up section 1 Navbar HTML code (reduce duplicates)
-//			Add social links (github, linkedin, personal site)
-//			View counter via javascript
-//			API calls to Dynamo DB
+//			DONE--Add social links (github, linkedin, personal site)
+//			DONE--View counter via javascript
+//			DONE--API calls to Dynamo DB
 //			Add background on section 1
+//			Add animations to make it more interactive
+//			Add error.html
+//			Modify discription of architectural roadmap
 //			change nav-icon color to white
 //			DONE--Set hyperlink and navbar redirection
 //			DONE--Brand-logo wraps on small device, try and change responsive font size
@@ -35,12 +38,11 @@ var HttpClient = function() {
     }
 }
 
-var client = new HttpClient();
-client.get('https://api.kevinlim.cc/incrementViewCount',function(response) {
-//https://5qrbpd5xb9.execute-api.us-east-1.amazonaws.com/default/incrementViewCount'
-    // update page view with custom API call
-	pageView = "Page views: " + String(response); 
-	document.getElementById("pageview").textContent= pageView;
-	console.log(response);
-});
+// var client = new HttpClient();
+// client.get('https://api.kevinlim.cc/incrementViewCount',function(response) {
+//     // update page view with custom API call
+// 	pageView = "Page views: " + String(response); 
+// 	document.getElementById("pageview").textContent= pageView;
+// 	console.log(response);
+// });
 
