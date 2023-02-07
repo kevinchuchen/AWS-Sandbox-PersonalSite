@@ -268,3 +268,14 @@ section{
   left: 50%;
   top: calc(50% - 3px);
 }
+.architectural-diag{
+  border-radius: 5%;
+}
+
+@media only screen and (min-width: 992px) { /*hide navbar for med and below screens*/
+
+  .architectural-diag{
+    height: 650px;
+    border-radius: 5%;
+  }
+}

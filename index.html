@@ -224,12 +224,21 @@
 						The view counter on the landing page of this site is updated every time the webpage is refreshed. This is accomplished via a custom API created in API Gateway. Every time the API endpoint is called, a lambda function written in Python is invoked to update a dynamoDB table with an updated view count and returning the value to the frontend (To prevent spams, the API is rate-limited).
 					</p>
 				</div>
-				<div class="col-2 text-center top d-inline-flex justify-content-center align-items-center">
+				<div class="col-2 text-center top d-inline-flex justify-content-center align-items-center pb-5">
 					<div class="circle font-weight-bold">6</div>
 				</div>
-				</div>
-				<!--path between 6-7 -->
+			</div>
+			<!--Architectural diagram-->
+			<div class="">
+				<h2 class="pb-3 pt-5 ">Architectural Diagram</h2>
+				<p class="pb-2 mb-5">
+					The diagram below represents this website's back-end infrastructure, which has been designed based on a serverless architecture.
+					This design allows for a fully flexible and scalable solution that can adapt to varying levels of traffic and demand while while minimizing operational costs and maximizing uptime.
+					<!--The use of AWS serverless resources, which only charges for actual resources consumed, is an example of how this design helps minimize operational costs.-->
+				</p>
+				<div class="pb-4"><img class="img-fluid w-100 architectural-diag" src="./src/Architecture diagram.drawio.svg" alt="Website architectural diagram"></div>
 
+			</div>
 		</div>
 	</section>
 
