@@ -81,7 +81,11 @@ body, html {
 	border: 1px solid yellow;
 }
 
-section{
+.sec-1{
+	font-family: 'Hanken Grotesk', sans-serif;
+	color:white;
+}
+.sec-2,.sec-3{
 	background: var(--bg-black1);
 	font-family: 'Hanken Grotesk', sans-serif;
 	color:white;
@@ -92,7 +96,7 @@ section{
 	.hide-lg{
 		display:none;
 	}
-	.sec-1{
+	body{
 		  background: linear-gradient(rgba(0,0,0,.5), rgba(0,0,0,.5)),url("./src/mobile-daniel-leone-v7daTKlZzaw-unsplash.jpg") no-repeat center center;
 		  -webkit-background-size: contain;
 		   -moz-background-size: contain;
@@ -101,7 +105,7 @@ section{
 				background-attachment: fixed;
 	}
 }
-.sec-1{
+body{
   background: linear-gradient(rgba(0,0,0,.5), rgba(0,0,0,.5)),url("./src/daniel-leone-v7daTKlZzaw-unsplash.jpg") no-repeat center center;
   -webkit-background-size: cover;
    -moz-background-size: cover;
