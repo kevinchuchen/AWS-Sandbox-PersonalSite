@@ -80,10 +80,12 @@ body, html {
 .testy {
 	border: 1px solid yellow;
 }
-section{
-	background: var(--bg-black1);
+.sec-1, .sec-2, .sec-3{
 	font-family: 'Hanken Grotesk', sans-serif;
 	color:white;
+}
+.sec-2, .sec-3{
+	background: var(--bg-black1);
 }
 /*------------Page 1 CSS---------------*/
 
@@ -92,31 +94,13 @@ section{
 		display:none;
 	}
 }
-.sec-1{
-	height:100vh;
-	width:100vw;
-  background: linear-gradient(rgba(0,0,0,.5), rgba(0,0,0,.5)),url("./src/daniel-leone-v7daTKlZzaw-unsplash.jpg") no-repeat center center;
-  -webkit-background-size: contain;
-   -moz-background-size: contain;
-     -o-background-size: contain;
-        background-size: contain;
-        background-attachment: fixed;
-
-}
-
-
-@media only screen and (min-width: 992px) { /*hide navbar for med and below screens*/
-.sec-1{
-	height:100vh;
-	width:100vw;
+body{
   background: linear-gradient(rgba(0,0,0,.5), rgba(0,0,0,.5)),url("./src/daniel-leone-v7daTKlZzaw-unsplash.jpg") no-repeat center center;
   -webkit-background-size: cover;
    -moz-background-size: cover;
      -o-background-size: cover;
         background-size: cover;
         background-attachment: fixed;
-
-}
 
 }
 
@@ -219,11 +203,11 @@ body{
 
 
 /*------------Page 3 CSS---------------*/
-.sec3 h5{
+.sec-3 h5{
   color:var(--dark-green)
 
 }
-.sec3{
+.sec-3{
   background: rgb(14,17,17);
   background: linear-gradient(180deg, rgba(14,17,17,1) 17%, rgba(6,40,5,1) 46%, rgba(7,46,6,1) 72%, rgba(10,63,8,1) 100%);
 }
