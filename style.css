@@ -94,10 +94,10 @@ section{
 	}
 	.sec-1{
 		  background: linear-gradient(rgba(0,0,0,.5), rgba(0,0,0,.5)),url("./src/daniel-leone-v7daTKlZzaw-unsplash.jpg") no-repeat center center;
-		  -webkit-background-size: contain;
-		   -moz-background-size: contain;
-			 -o-background-size: contain;
-				background-size: contain;
+		  -webkit-background-size: cover;
+		   -moz-background-size: cover;
+			 -o-background-size: cover;
+				background-size: cover;
 	}
 }
 .sec-1{
