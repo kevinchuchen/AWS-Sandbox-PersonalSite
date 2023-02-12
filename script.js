@@ -38,11 +38,11 @@ var HttpClient = function() {
     }
 }
 
-var client = new HttpClient();
-client.get('https://api.kevinlim.cc/incrementViewCount',function(response) {
-    // update page view with custom API call
-	pageView = "Page views: " + String(response); 
-	document.getElementById("pageview").textContent= pageView;
-	console.log(response);
-});
+// var client = new HttpClient();
+// client.get('https://api.kevinlim.cc/incrementViewCount',function(response) {
+//     // update page view with custom API call
+// 	pageView = "Page views: " + String(response); 
+// 	document.getElementById("pageview").textContent= pageView;
+// 	console.log(response);
+// });
 
