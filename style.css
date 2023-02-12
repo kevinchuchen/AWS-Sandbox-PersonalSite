@@ -99,6 +99,7 @@ section{
 			 -o-background-size: cover;
 				background-size: cover;
 				background-attachment: fixed;
+			min-height: 100vh;
 	}
 }
 .sec-1{
