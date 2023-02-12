@@ -94,10 +94,10 @@ section{
 	}
 	.sec-1{
 		  background: linear-gradient(rgba(0,0,0,.5), rgba(0,0,0,.5)),url("./src/mobile-daniel-leone-v7daTKlZzaw-unsplash.jpg") no-repeat center center;
-		  -webkit-background-size: cover;
-		   -moz-background-size: cover;
-			 -o-background-size: cover;
-				background-size: cover;
+		  -webkit-background-size: auto;
+		   -moz-background-size: auto;
+			 -o-background-size: auto;
+				background-size: auto;
 				background-attachment: fixed;
 	}
 }
