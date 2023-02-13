@@ -19,8 +19,13 @@ $(function() {
 		touchScroll:false,
 		scrollbars:true,
 		afterRender:function(i, panels){
-		$.scrollify.update()
-		$(".pagination a").on("click",$.scrollify.move);
+			$.scrollify.update()
+			$(".pagination a").on("click",$.scrollify.move);
+			 if( $(window).width() < 992) {
+				$.scrollify.disable()
+			}else{
+				$.scrollify.enable()
+			}
 		}
 	});
 });
@@ -37,6 +42,8 @@ var HttpClient = function() {
         anHttpRequest.send( null );
     }
 }
+
+$.scrollify.disable()
 
 // var client = new HttpClient();
 // client.get('https://api.kevinlim.cc/incrementViewCount',function(response) {
