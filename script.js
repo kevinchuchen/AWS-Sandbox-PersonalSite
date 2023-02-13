@@ -4,7 +4,7 @@
 //			DONE--View counter via javascript
 //			DONE--API calls to Dynamo DB
 //			DONE--Add background on section 1
-//			Remove touchscroll completely
+//			DONE -- Remove touchscroll completely
 //			Add animations to make it more interactive
 //			Add error.html
 //			DONE--Modify discription of architectural roadmap
@@ -22,11 +22,10 @@ $(function() {
 			$.scrollify.update()
 			$(".pagination a").on("click",$.scrollify.move);
 			 if( $(window).width() < 992) {
-				$.scrollify.destroy()
+				$.scrollify.disable()
 			}else{
 				$.scrollify.enable()
 			}
-			console.log(String($.scrollify.isDisabled()));
 		}
 	});
 });
