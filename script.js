@@ -44,8 +44,6 @@ var HttpClient = function() {
     }
 }
 
-$.scrollify.disable()
-
 // var client = new HttpClient();
 // client.get('https://api.kevinlim.cc/incrementViewCount',function(response) {
 //     // update page view with custom API call
