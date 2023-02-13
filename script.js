@@ -22,10 +22,11 @@ $(function() {
 			$.scrollify.update()
 			$(".pagination a").on("click",$.scrollify.move);
 			 if( $(window).width() < 992) {
-				$.scrollify.disable()
+				$.scrollify.destroy()
 			}else{
 				$.scrollify.enable()
 			}
+			console.log($.scrollify.isDisabled());
 		}
 	});
 });
