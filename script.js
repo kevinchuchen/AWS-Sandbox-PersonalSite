@@ -26,7 +26,7 @@ $(function() {
 			}else{
 				$.scrollify.enable()
 			}
-			console.log($.scrollify.isDisabled());
+			console.log(String($.scrollify.isDisabled()));
 		}
 	});
 });
