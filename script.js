@@ -60,5 +60,5 @@ $(document).ready(function () {
 	});
 	observer.observe(document.querySelector('.ful-resp'));
 
-	
-}
+
+)};
