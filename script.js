@@ -53,9 +53,9 @@ var HttpClient = function() {
 // });
 
 window.addEventListener("load", (event) => {
-	const observer = new IntersectionObserver(entries => {
+	/* const observer = new IntersectionObserver((entries) => {
 		console.log(entries);
-		entries.forEach(entry => {
+		entries.forEach((entry) => {
 			const target= entry.target.querySelector('.ful-resp');
 			if (entry.isIntersecting) {
 				target.classList.add('animate__animated', 'animate__fadeIn');
@@ -69,6 +69,34 @@ window.addEventListener("load", (event) => {
 		
 		
 	});
-	observer.observe(document.querySelectorAll('.roadmap-wrapper'));
+	const observeList = document.querySelectorAll('.roadmap-wrapper');
+	
+	observeList.forEach((observe)=>{
+		
+		
+	})
+	observer.observe(document.querySelectorAll('.roadmap-wrapper')); */
+
+
+
+	// Register IntersectionObserver
+	const io = new IntersectionObserver((entries) => {
+	  entries.forEach((entry) => {
+		if (entry.intersectionRatio > 0) {
+		  // Add 'active' class if observation target is inside viewport
+		  entry.target.classList.add('active');
+		} else {
+		  // Remove 'active' class otherwise
+		  entry.target.classList.remove('active');
+		}
+	  })
+	})
+
+	// Declares what to observe, and observes its properties.
+	const boxElList = document.querySelectorAll('.ful-resp');
+	boxElList.forEach((el) => {
+	  io.observe(el);
+	})
+
 
 },false);
