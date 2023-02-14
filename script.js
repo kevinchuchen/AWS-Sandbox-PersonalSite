@@ -54,7 +54,7 @@ var HttpClient = function() {
 
 window.addEventListener("load", (event) => {
 	const observer = new IntersectionObserver(entries => {
-		console.log(String(entries));
+		console.log(String(entries[0]));
 		
 	});
 	observer.observe(document.querySelector('.ful-resp'));
