@@ -16,7 +16,7 @@ $(function() {
 		section: "section",
 		scrollSpeed:1400,
 		easing: "easeOutExpo",
-		touchScroll:false,
+		touchScroll:true,
 		scrollbars:true,
 		afterRender:function(i, panels){
 			$.scrollify.update()
