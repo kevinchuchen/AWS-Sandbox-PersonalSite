@@ -16,12 +16,12 @@ $(function() {
 		section: "section",
 		scrollSpeed:1400,
 		easing: "easeOutExpo",
-		touchScroll:true,
+		touchScroll:false,
 		scrollbars:true,
 		afterRender:function(i, panels){
 			$.scrollify.update()
 			$(".pagination a").on("click",$.scrollify.move);
-			 if( $(window).width() < 576) {
+			 if( $(window).width() < 992) {
 				$.scrollify.destroy()
 			}else{
 				$.scrollify.enable()
