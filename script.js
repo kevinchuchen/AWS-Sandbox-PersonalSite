@@ -87,7 +87,11 @@ window.addEventListener("load", (event) => {
 		  entry.target.classList.add('animate__animated', 'animate__fadeIn');
 		} else {
 		  // Remove 'active' class otherwise
+<<<<<<< HEAD
+		  //entry.target.classList.remove('animate__animated', 'animate__fadeIn');
+=======
 		  entry.target.classList.remove('animate__animated', 'animate__fadeIn');
+>>>>>>> 53874a64aa39fe6885088e172397956d2edd1de2
 		}
 	  })
 	})
