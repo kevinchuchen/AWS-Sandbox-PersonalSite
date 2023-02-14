@@ -84,10 +84,10 @@ window.addEventListener("load", (event) => {
 	  entries.forEach((entry) => {
 		if (entry.intersectionRatio > 0) {
 		  // Add 'active' class if observation target is inside viewport
-		  entry.target.classList.add('active');
+		  entry.target.classList.add('animate__animated', 'animate__fadeIn');
 		} else {
 		  // Remove 'active' class otherwise
-		  entry.target.classList.remove('active');
+		  entry.target.classList.remove('animate__animated', 'animate__fadeIn');
 		}
 	  })
 	})
