@@ -58,19 +58,17 @@ window.addEventListener("load", (event) => {
 		entries.forEach(entry => {
 			const target= entry.target.querySelector('.ful-resp');
 			if (entry.isIntersecting) {
-				target.classList.add('animate__animated');
-				target.classList.add('animate__fadeIn');
+				target.classList.add('animate__animated', 'animate__fadeIn');
 				
 
 				return; // if we added the class, exit the function
 			}
-			target.classList.remove('animate__animated');
-			target.classList.remove('animate__fadeIn');
+			target.classList.remove('animate__animated', 'animate__fadeIn');
 
 		});
 		
 		
 	});
-	observer.observe(document.querySelector('.ful-resp'));
+	observer.observe(document.querySelector('.roadmap-wrapper'));
 
 },false);
