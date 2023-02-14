@@ -90,7 +90,7 @@ window.addEventListener("load", (event) => {
 		  entry.target.classList.remove('animate__animated', 'animate__fadeIn');
 		}
 	  })
-	}, {threshold:0.5});
+	});
 
 	// Declares what to observe, and observes its properties.
 	const boxElList = document.querySelectorAll('.ful-resp');
