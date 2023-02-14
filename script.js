@@ -69,6 +69,6 @@ window.addEventListener("load", (event) => {
 		
 		
 	});
-	observer.observe(document.querySelector('.roadmap-wrapper'));
+	observer.observe(document.querySelectorAll('.roadmap-wrapper'));
 
 },false);
