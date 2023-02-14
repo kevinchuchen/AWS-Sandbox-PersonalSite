@@ -54,7 +54,17 @@ var HttpClient = function() {
 
 window.addEventListener("load", (event) => {
 	const observer = new IntersectionObserver(entries => {
-		console.log(String(entries[0]));
+		
+		console.log(entries);
+		entries.forEach(entry => {
+			if (entry.isIntersecting) {
+			square.classList.add('animate__animated animate__bounce');
+			return; // if we added the class, exit the function
+			}
+			square.classList.remove('square-animation');
+
+		});
+		
 		
 	});
 	observer.observe(document.querySelector('.ful-resp'));
