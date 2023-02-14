@@ -59,12 +59,13 @@ window.addEventListener("load", (event) => {
 			const target= entry.target.querySelector('.ful-resp');
 			if (entry.isIntersecting) {
 				target.classList.add('animate__animated');
-				target.classList.add('animate__bounce');
+				target.classList.add('animate__fadeIn');
+				
 
 				return; // if we added the class, exit the function
 			}
 			target.classList.remove('animate__animated');
-			target.classList.remove('animate__bounce');
+			target.classList.remove('animate__fadeIn');
 
 		});
 		

@@ -125,7 +125,7 @@
 					<div class="col-2 order-last text-center full-even d-inline-flex justify-content-center align-items-center">
 						<div class="circle font-weight-bold">2</div>
 					</div>
-					<div class="col-md-6 col-10 text-right">
+					<div class="col-md-6 col-10 text-right ful-resp">
 						<h5>Website Hosting</h5>
 						<p> 
 						Since this site does not require any server-side resources, it can be statically hosted in Amazon S3. I chose Amazon S3 as my hosting provider because S3 holds many advantages over the traditional hosting provider, especially when hosting static resources. It offers a fully managed way to store objects in a highly-scalable, highly-available, resilient and secure manner - all while requiring minimal user configuration.
@@ -150,7 +150,7 @@
 				  <div class="col-2 text-center full-odd d-inline-flex justify-content-center align-items-center">
 					<div class="circle font-weight-bold">3</div>
 				  </div>
-				  <div class="col-md-6 col-10 ">
+				  <div class="col-md-6 col-10 ful-resp">
 					<h5>DNS Configuration</h5>
 					<p>
 						Amazon's Route 53(R53) service is used to register a custom DNS domain and also to provide DNS routing services. Using R53 allows for a seamless and fully managed DNS integration between AWS services, including S3. Route 53 can also verify the site's reachability via resource health-checks and route traffic away from unhealthy resources if needed, ensuring reliability.
@@ -171,7 +171,7 @@
 				</div>
 				<!--fourth section-->
 				<div class="row align-items-center justify-content-end vertical-line d-flex">
-				  <div class="col-md-6 col-10 text-right">
+				  <div class="col-md-6 col-10 text-right ful-resp">
 					<h5>Content Delivery Network</h5>
 					<p> 
 						Amazon's CloudFront network is configured to speed up the content loading and distribution of this site to a global scale. Amazon CloudFront is a content delivery network (CDN) which provides global content caching by leveraging hundreds of Amazon's distributed edge locations to provide low-latency and high content access speed for its users. CloudFront is also used together with AWS Certificate Manager(ACM) to provision and deploy SSL/TLS certificate to enhance this site's security by providing an encrypted tunnel for client-server bidirectional communication (HTTPS).
@@ -198,7 +198,7 @@
 				  <div class="col-2 text-center full-odd d-inline-flex justify-content-center align-items-center">
 					<div class="circle font-weight-bold">5</div>
 				  </div>
-				  <div class="col-md-6 col-10 ">
+				  <div class="col-md-6 col-10 ful-resp">
 					<h5>CI/CD Pipeline(Front end)</h5>
 					<p>
 						Continuous integration & deployment methods using Git and AWS Codepipeline are also used to simplify deployment and testing. This means that production code can be pushed straight to my main Git repository, and AWS Codepipeline automatically updates the S3 bucket with the latest version of code, shortening iteration time. Apart from providing version control, Git can also be used to invalidate CloudFront caches via Git Actions so that the site can be updated almost immediately after the code is pushed into the main branch.
@@ -219,7 +219,7 @@
 				</div>
 				<!--6th section-->
 				<div class="row align-items-center justify-content-end vertical-line d-flex">
-					<div class="col-md-6 col-10 text-right">
+					<div class="col-md-6 col-10 text-right ful-resp">
 						<h5>Custom API with AWS DynamoDB view counter</h5>
 						<p> 
 							The view counter on the landing page of this site is updated every time the webpage is refreshed. This is accomplished via a custom API created in API Gateway. Every time the API endpoint is called, a lambda function written in Python is invoked to update a dynamoDB table with an updated view count and returning the value to the frontend (To prevent spams, the API is rate-limited).
