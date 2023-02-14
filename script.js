@@ -54,9 +54,9 @@ var HttpClient = function() {
 
 window.addEventListener("load", (event) => {
 	const observer = new IntersectionObserver(entries => {
-		const target= entry.target.querySelector('.ful-resp');
 		console.log(entries);
 		entries.forEach(entry => {
+			const target= entry.target.querySelector('.ful-resp');
 			if (entry.isIntersecting) {
 				target.classList.add('animate__animated');
 				target.classList.add('animate__bounce');
