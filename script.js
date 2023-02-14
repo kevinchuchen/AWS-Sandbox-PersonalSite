@@ -52,7 +52,7 @@ var HttpClient = function() {
 // });
 
 
-const observer = new InstersectionObserver(entries => {
+const observer = new IntersectionObserver(entries => {
 	console.log(entries)
 	
 });
