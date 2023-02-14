@@ -51,3 +51,10 @@ var HttpClient = function() {
 // 	console.log(response);
 // });
 
+
+const observer = new InstersectionObserver(entries => {
+	console.log(entries)
+	
+});
+
+observer.observe(document.querySelector('.ful-resp'));
