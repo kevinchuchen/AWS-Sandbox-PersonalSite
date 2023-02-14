@@ -11,37 +11,39 @@
 //			DONE--Set hyperlink and navbar redirection
 //			DONE--Brand-logo wraps on small device, try and change responsive font size
 //			DONE--make scrolling work on touchpad
-$(function() {
-	$.scrollify({
-		section: "section",
-		scrollSpeed:1400,
-		easing: "easeOutExpo",
-		touchScroll:false,
-		scrollbars:true,
-		afterRender:function(i, panels){
-			$.scrollify.update()
-			$(".pagination a").on("click",$.scrollify.move);
-			 if( $(window).width() < 992) {
-				$.scrollify.disable()
-			}else{
-				$.scrollify.enable()
+
+$(document).ready(function () {
+	$(function() {
+		$.scrollify({
+			section: "section",
+			scrollSpeed:1400,
+			easing: "easeOutExpo",
+			touchScroll:false,
+			scrollbars:true,
+			afterRender:function(i, panels){
+				$.scrollify.update()
+				$(".pagination a").on("click",$.scrollify.move);
+				 if( $(window).width() < 992) {
+					$.scrollify.disable()
+				}else{
+					$.scrollify.enable()
+				}
 			}
-		}
+		});
 	});
-});
 
-var HttpClient = function() {
-    this.get = function(aUrl, aCallback) {
-        var anHttpRequest = new XMLHttpRequest();
-        anHttpRequest.onreadystatechange = function() { 
-            if (anHttpRequest.readyState == 4 && anHttpRequest.status == 200)
-                aCallback(anHttpRequest.responseText);
-        }
+	var HttpClient = function() {
+		this.get = function(aUrl, aCallback) {
+			var anHttpRequest = new XMLHttpRequest();
+			anHttpRequest.onreadystatechange = function() { 
+				if (anHttpRequest.readyState == 4 && anHttpRequest.status == 200)
+					aCallback(anHttpRequest.responseText);
+			}
 
-        anHttpRequest.open( "GET", aUrl, true );            
-        anHttpRequest.send( null );
-    }
-}
+			anHttpRequest.open( "GET", aUrl, true );            
+			anHttpRequest.send( null );
+		}
+	}
 
 // var client = new HttpClient();
 // client.get('https://api.kevinlim.cc/incrementViewCount',function(response) {
@@ -52,9 +54,11 @@ var HttpClient = function() {
 // });
 
 
-const observer = new IntersectionObserver(entries => {
-	console.log(String(entries));
-	
-});
+	const observer = new IntersectionObserver(entries => {
+		console.log(String(entries));
+		
+	});
+	observer.observe(document.querySelector('.ful-resp'));
 
-observer.observe(document.querySelector('.ful-resp'));
+	
+}
