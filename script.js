@@ -87,7 +87,7 @@ window.addEventListener("load", (event) => {
 		  entry.target.classList.add('animate__animated', 'animate__fadeIn');
 		} else {
 		  // Remove 'active' class otherwise
-		  //entry.target.classList.remove('animate__animated', 'animate__fadeIn');
+		  entry.target.classList.remove('animate__animated', 'animate__fadeIn');
 		}
 	  })
 	}, {threshold:0.5});
