@@ -21,7 +21,7 @@ $(function() {
 		afterRender:function(i, panels){
 			$.scrollify.update()
 			$(".pagination a").on("click",$.scrollify.move);
-			 if( $(window).width() < 992) {
+			if( $(window).width() < 992) {
 				$.scrollify.destroy()
 			}else{
 				$.scrollify.enable()
