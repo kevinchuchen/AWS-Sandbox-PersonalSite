@@ -11,7 +11,6 @@
 //			DONE--Set hyperlink and navbar redirection
 //			DONE--Brand-logo wraps on small device, try and change responsive font size
 //			DONE--make scrolling work on touchpad
-
 $(function() {
 	$.scrollify({
 		section: "section",
@@ -22,7 +21,7 @@ $(function() {
 		afterRender:function(i, panels){
 			$.scrollify.update()
 			$(".pagination a").on("click",$.scrollify.move);
-			 if( $(window).width() < 992) {
+			 if( $(window).width() < 576) {
 				$.scrollify.destroy()
 			}else{
 				$.scrollify.enable()
@@ -32,16 +31,16 @@ $(function() {
 });
 
 var HttpClient = function() {
-	this.get = function(aUrl, aCallback) {
-		var anHttpRequest = new XMLHttpRequest();
-		anHttpRequest.onreadystatechange = function() { 
-			if (anHttpRequest.readyState == 4 && anHttpRequest.status == 200)
-				aCallback(anHttpRequest.responseText);
-		}
+    this.get = function(aUrl, aCallback) {
+        var anHttpRequest = new XMLHttpRequest();
+        anHttpRequest.onreadystatechange = function() { 
+            if (anHttpRequest.readyState == 4 && anHttpRequest.status == 200)
+                aCallback(anHttpRequest.responseText);
+        }
 
-		anHttpRequest.open( "GET", aUrl, true );            
-		anHttpRequest.send( null );
-	}
+        anHttpRequest.open( "GET", aUrl, true );            
+        anHttpRequest.send( null );
+    }
 }
 
 // var client = new HttpClient();
@@ -52,55 +51,3 @@ var HttpClient = function() {
 // 	console.log(response);
 // });
 
-window.addEventListener("load", (event) => {
-	/* const observer = new IntersectionObserver((entries) => {
-		console.log(entries);
-		entries.forEach((entry) => {
-			const target= entry.target.querySelector('.ful-resp');
-			if (entry.isIntersecting) {
-				target.classList.add('animate__animated', 'animate__fadeIn');
-				
-
-				return; // if we added the class, exit the function
-			}
-			target.classList.remove('animate__animated', 'animate__fadeIn');
-
-		});
-		
-		
-	});
-	const observeList = document.querySelectorAll('.roadmap-wrapper');
-	
-	observeList.forEach((observe)=>{
-		
-		
-	})
-	observer.observe(document.querySelectorAll('.roadmap-wrapper')); */
-
-
-
-	// Register IntersectionObserver
-	const io = new IntersectionObserver((entries) => {
-	  entries.forEach((entry) => {
-		if (entry.intersectionRatio > 0) {
-		  // Add 'active' class if observation target is inside viewport
-		  entry.target.classList.add('animate__animated', 'animate__fadeIn');
-		  entry.target.classList.remove('hidden');
-
-		} else {
-		  // Remove 'active' class otherwise
-		  entry.target.classList.remove('animate__animated', 'animate__fadeIn');
-		  entry.target.classList.add('hidden');
-
-		}
-	  })
-	});
-
-	// Declares what to observe, and observes its properties.
-	const boxElList = document.querySelectorAll('.ful-resp');
-	boxElList.forEach((el) => {
-	  io.observe(el);
-	})
-
-
-},false);
