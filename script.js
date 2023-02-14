@@ -71,6 +71,6 @@ window.addEventListener("load", (event) => {
 		
 		
 	});
-	observer.observe(document.querySelector('.roadmap-wrapper'));
+	observer.observe(document.querySelector('.ful-resp'));
 
 },false);
