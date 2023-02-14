@@ -54,19 +54,22 @@ var HttpClient = function() {
 
 window.addEventListener("load", (event) => {
 	const observer = new IntersectionObserver(entries => {
-		
+		const target= entry.target.querySelector('.ful-resp');
 		console.log(entries);
 		entries.forEach(entry => {
 			if (entry.isIntersecting) {
-			square.classList.add('animate__animated animate__bounce');
-			return; // if we added the class, exit the function
+				target.classList.add('animate__animated');
+				target.classList.add('animate__bounce');
+
+				return; // if we added the class, exit the function
 			}
-			square.classList.remove('square-animation');
+			target.classList.remove('animate__animated');
+			target.classList.remove('animate__bounce');
 
 		});
 		
 		
 	});
-	observer.observe(document.querySelector('.ful-resp'));
+	observer.observe(document.querySelector('.roadmap-wrapper'));
 
 },false);
