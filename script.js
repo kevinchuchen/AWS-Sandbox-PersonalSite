@@ -53,7 +53,7 @@ var HttpClient = function() {
 
 
 const observer = new IntersectionObserver(entries => {
-	console.log(entries)
+	console.log(String(entries));
 	
 });
 
