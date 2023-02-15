@@ -4,8 +4,8 @@
 //			DONE--View counter via javascript
 //			DONE--API calls to Dynamo DB
 //			DONE--Add background on section 1
-//			Remove touchscroll completely
-//			Add animations to make it more interactive
+//			DONE--Remove touchscroll completely
+//			DONE--Add animations to make it more interactive
 //			Add error.html
 //			DONE--Modify discription of architectural roadmap
 //			DONE--Set hyperlink and navbar redirection
@@ -19,8 +19,13 @@ $(function() {
 		touchScroll:false,
 		scrollbars:true,
 		afterRender:function(i, panels){
-		$.scrollify.update()
-		$(".pagination a").on("click",$.scrollify.move);
+			$.scrollify.update()
+			$(".pagination a").on("click",$.scrollify.move);
+			if( $(window).width() < 992) {
+				$.scrollify.destroy()
+			}else{
+				$.scrollify.enable()
+			}
 		}
 	});
 });
@@ -46,3 +51,26 @@ client.get('https://api.kevinlim.cc/incrementViewCount',function(response) {
 	console.log(response);
 });
 
+
+window.addEventListener("load", (event) => {
+	// Register IntersectionObserver
+	const io = new IntersectionObserver((entries) => {
+	  entries.forEach((entry) => {
+		if (entry.intersectionRatio > 0) {
+		  // Add 'active' class if observation target is inside viewport
+		  entry.target.classList.add('animate__animated', 'animate__fadeIn');
+		} else {
+		  // Remove 'active' class otherwise
+		  entry.target.classList.remove('animate__animated', 'animate__fadeIn');
+		}
+	  })
+	});
+
+	// Declares what to observe, and observes its properties.
+	const boxElList = document.querySelectorAll('.sec_animate');
+	boxElList.forEach((el) => {
+	  io.observe(el);
+	})
+
+
+},false);

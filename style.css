@@ -79,12 +79,11 @@ body, html {
 .testy {
 	border: 1px solid yellow;
 }
-.sec-1, .sec-2, .sec-3{
+
+section{
+	background: var(--bg-black1);
 	font-family: 'Hanken Grotesk', sans-serif;
 	color:white;
-}
-.sec-2, .sec-3{
-	background: var(--bg-black1);
 }
 /*------------Page 1 CSS---------------*/
 

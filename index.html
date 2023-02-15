@@ -4,9 +4,9 @@
 	<title>Lim Chu Chen</title>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="preload" href="./src/Headshot-EDITED.png">
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">	
 	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@200;400;500;800&family=Nunito+Sans:wght@700&family=Open+Sans:wght@700&family=Permanent+Marker&display=swap" rel="stylesheet">
@@ -17,7 +17,7 @@
 	<section class="sec-1 container-fluid d-flex flex-column justify-content-between w-100 p-0" data-section-name="home">
 		<div class="text-right p-4 pb-0 h-3" id="pageview"></div>
 		<div class=" d-flex flex-column align-items-center">
-			<div class="display-3" id="name">Lim Chu Chen</div>
+			<div class="display-3 " id="name">Lim Chu Chen</div>
 			<div class="h2" id="title">Cloud Developer</div>
 			<div class="d-flex socials">
 				<div><a target="_blank" href="https://github.com/kevinchuchen">
@@ -63,7 +63,7 @@
 					<div class="photo"><img  class="img-fluid headshot" src="./src/HEADSHOT_EDITED_V2.png" alt="Lim Chu Chen"></div>
 				</div>
 				<div class="right col-lg-6 d-flex flex-column p-4 justify-content-center">
-					<div class="AboutMe  display-4 ">I'm Chu Chen</div>
+					<div class="AboutMe  display-4">I'm Chu Chen</div>
 					<div class="sec2-content px-4">
 						<p class="indent " align="left"> <!--set max-width in container so text stays within-->
 							I'm an optical transmisison engineer in the ICT field by day, and an aspiring cloud developer and solutions architect by night.
@@ -97,148 +97,151 @@
 			<h2 class="pb-3 pt-5 ">Architectural Roadmap</h2>
 			<p class="pb-5 mb-5 "> This site was built as part of a challenge to build a cloud-based portfolio. It serves as a hands-on experience working with the cloud, and allows for deeper understanding of cloud technologies and best practices.
 				This section shows the various services used to host this site and also the technical implementation details. </p>
-			<!--first section-->
-			<div class="row align-items-center vertical-line d-flex">
-			  <div class="col-2 text-center bottom d-inline-flex justify-content-center align-items-center">
-				<div class="circle font-weight-bold">1</div>
-			  </div>
-			  <div class="col-md-6 col-10">
-				<h5>Fully Responsive</h5>
-				<p>This website starts with being built in a responsive manner, allowing the elements to stack and change in response to the screen size. Go ahead, try it out !</p>
-			  </div>
-			</div>
-			<!--path between 1-2-->
-			<div class="row timeline">
-			  <div class="col-2">
-				<div class="corner top-right"></div>
-			  </div>
-			  <div class="col-8">
-				<hr/>
-			  </div>
-			  <div class="col-2">
-				<div class="corner left-bottom"></div>
-			  </div>
-			</div>
-			<!--second section-->
-			<div class="row align-items-center justify-content-end vertical-line d-flex">
-				<div class="col-2 order-last text-center full-even d-inline-flex justify-content-center align-items-center">
-					<div class="circle font-weight-bold">2</div>
+				<!--first section-->
+				<div class="row align-items-center vertical-line d-flex ">
+				  <div class="col-2 text-center bottom d-inline-flex justify-content-center align-items-center">
+					<div class="circle font-weight-bold">1</div>
+				  </div>
+				  <div class="col-md-6 col-10 sec_animate">
+					<h5>Fully Responsive</h5>
+					<p>This website starts with being built in a responsive manner, allowing the elements to stack and change in response to the screen size. Go ahead, try it out !</p>
+				  </div>
 				</div>
-				<div class="col-md-6 col-10 text-right">
-					<h5>Website Hosting</h5>
-					<p> 
-					Since this site does not require any server-side resources, it can be statically hosted in Amazon S3. I chose Amazon S3 as my hosting provider because S3 holds many advantages over the traditional hosting provider, especially when hosting static resources. It offers a fully managed way to store objects in a highly-scalable, highly-available, resilient and secure manner - all while requiring minimal user configuration.
-					</p>
+				<!--path between 1-2-->
+				<div class="row timeline">
+				  <div class="col-2">
+					<div class="corner top-right"></div>
+				  </div>
+				  <div class="col-8">
+					<hr/>
+				  </div>
+				  <div class="col-2">
+					<div class="corner left-bottom"></div>
+				  </div>
 				</div>
+				<!--second section-->
+				<div class="row align-items-center justify-content-end vertical-line d-flex ">
+					<div class="col-2 order-last text-center full-even d-inline-flex justify-content-center align-items-center">
+						<div class="circle font-weight-bold">2</div>
+					</div>
+					<div class="col-md-6 col-10 text-right sec_animate">
+						<h5>Website Hosting</h5>
+						<p> 
+						Since this site does not require any server-side resources, it can be statically hosted in Amazon S3. I chose Amazon S3 as my hosting provider because S3 holds many advantages over the traditional hosting provider, especially when hosting static resources. It offers a fully managed way to store objects in a highly-scalable, highly-available, resilient and secure manner - all while requiring minimal user configuration.
+						</p>
+					</div>
 
-			</div>
-			<!--path between 2-3-->
-			<div class="row timeline">
-			  <div class="col-2">
-				<div class="corner right-bottom"></div>
-			  </div>
-			  <div class="col-8">
-				<hr/>
-			  </div>
-			  <div class="col-2">
-				<div class="corner top-left"></div>
-			  </div>
-			</div>
-			<!--third section-->
-			<div class="row align-items-center vertical-line d-flex">
-			  <div class="col-2 text-center full-odd d-inline-flex justify-content-center align-items-center">
-				<div class="circle font-weight-bold">3</div>
-			  </div>
-			  <div class="col-md-6 col-10 ">
-				<h5>DNS Configuration</h5>
-				<p>
-					Amazon's Route 53(R53) service is used to register a custom DNS domain and also to provide DNS routing services. Using R53 allows for a seamless and fully managed DNS integration between AWS services, including S3. Route 53 can also verify the site's reachability via resource health-checks and route traffic away from unhealthy resources if needed, ensuring reliability.
-				</p>
 				</div>
-			</div>
-			<!--path between 3-4 -->
-			<div class="row timeline">
-			  <div class="col-2">
-				<div class="corner top-right"></div>
-			  </div>
-			  <div class="col-8">
-				<hr/>
-			  </div>
-			  <div class="col-2">
-				<div class="corner left-bottom"></div>
-			  </div>
-			</div>
-			<!--fourth section-->
-			<div class="row align-items-center justify-content-end vertical-line d-flex">
-			  <div class="col-md-6 col-10 text-right">
-				<h5>Content Delivery Network</h5>
-				<p> 
-					Amazon's CloudFront network is configured to speed up the content loading and distribution of this site to a global scale. Amazon CloudFront is a content delivery network (CDN) which provides global content caching by leveraging hundreds of Amazon's distributed edge locations to provide low-latency and high content access speed for its users. CloudFront is also used together with AWS Certificate Manager(ACM) to provision and deploy SSL/TLS certificate to enhance this site's security by providing an encrypted tunnel for client-server bidirectional communication (HTTPS).
-				</p>
-			  </div>
-			  <div class="col-2 text-center full-even d-inline-flex justify-content-center align-items-center">
-				<div class="circle font-weight-bold">4</div>
-			  </div>
-			</div>
-			<!--path between 4-5-->
-			<div class="row timeline">
-			  <div class="col-2">
-				<div class="corner right-bottom"></div>
-			  </div>
-			  <div class="col-8">
-				<hr/>
-			  </div>
-			  <div class="col-2">
-				<div class="corner top-left"></div>
-			  </div>
-			</div>
-			<!--fifth section-->
-			<div class="row align-items-center vertical-line d-flex">
-			  <div class="col-2 text-center full-odd d-inline-flex justify-content-center align-items-center">
-				<div class="circle font-weight-bold">5</div>
-			  </div>
-			  <div class="col-md-6 col-10 ">
-				<h5>CI/CD Pipeline(Front end)</h5>
-				<p>
-					Continuous integration & deployment methods using Git and AWS Codepipeline are also used to simplify deployment and testing. This means that production code can be pushed straight to my main Git repository, and AWS Codepipeline automatically updates the S3 bucket with the latest version of code, shortening iteration time. Apart from providing version control, Git can also be used to invalidate CloudFront caches via Git Actions so that the site can be updated almost immediately after the code is pushed into the main branch.
-				</p>
-			  </div>
-			</div>
-			<!--path between 5-6 -->
-			<div class="row timeline">
-			  <div class="col-2">
-				<div class="corner top-right"></div>
-			  </div>
-			  <div class="col-8">
-				<hr/>
-			  </div>
-			  <div class="col-2">
-				<div class="corner left-bottom"></div>
-			  </div>
-			</div>
-			<!--6th section-->
-			<div class="row align-items-center justify-content-end vertical-line d-flex">
-				<div class="col-md-6 col-10 text-right">
-					<h5>Custom API with AWS DynamoDB view counter</h5>
-					<p> 
-						The view counter on the landing page of this site is updated every time the webpage is refreshed. This is accomplished via a custom API created in API Gateway. Every time the API endpoint is called, a lambda function written in Python is invoked to update a dynamoDB table with an updated view count and returning the value to the frontend (To prevent spams, the API is rate-limited).
+				<!--path between 2-3-->
+				<div class="row timeline">
+				  <div class="col-2">
+					<div class="corner right-bottom"></div>
+				  </div>
+				  <div class="col-8">
+					<hr/>
+				  </div>
+				  <div class="col-2">
+					<div class="corner top-left"></div>
+				  </div>
+				</div>
+				<!--third section-->
+				<div class="row align-items-center vertical-line d-flex ">
+				  <div class="col-2 text-center full-odd d-inline-flex justify-content-center align-items-center">
+					<div class="circle font-weight-bold">3</div>
+				  </div>
+				  <div class="col-md-6 col-10 sec_animate">
+					<h5>DNS Configuration</h5>
+					<p>
+						Amazon's Route 53(R53) service is used to register a custom DNS domain and also to provide DNS routing services. Using R53 allows for a seamless and fully managed DNS integration between AWS services, including S3. Route 53 can also verify the site's reachability via resource health-checks and route traffic away from unhealthy resources if needed, ensuring reliability.
 					</p>
+					</div>
 				</div>
-				<div class="col-2 text-center top d-inline-flex justify-content-center align-items-center pb-5">
-					<div class="circle font-weight-bold">6</div>
+				<!--path between 3-4 -->
+				<div class="row timeline">
+				  <div class="col-2">
+					<div class="corner top-right"></div>
+				  </div>
+				  <div class="col-8">
+					<hr/>
+				  </div>
+				  <div class="col-2">
+					<div class="corner left-bottom"></div>
+				  </div>
 				</div>
-			</div>
-			<!--Architectural diagram-->
-			<div class="">
-				<h2 class="pb-3 pt-5 ">Architectural Diagram</h2>
-				<p class="pb-2 mb-5">
-					The diagram below represents this website's back-end infrastructure, which has been designed based on a serverless architecture.
-					This design allows for a fully flexible and scalable solution that can adapt to varying levels of traffic and demand while while minimizing operational costs and maximizing uptime.
-					<!--The use of AWS serverless resources, which only charges for actual resources consumed, is an example of how this design helps minimize operational costs.-->
-				</p>
-				<div class="pb-4"><img class="img-fluid w-100 architectural-diag" src="./src/Architecture diagram.drawio.svg" alt="Website architectural diagram"></div>
+				<!--fourth section-->
+				<div class="row align-items-center justify-content-end vertical-line d-flex ">
+				  <div class="col-md-6 col-10 text-right sec_animate">
+					<h5>Content Delivery Network</h5>
+					<p> 
+						Amazon's CloudFront network is configured to speed up the content loading and distribution of this site to a global scale. Amazon CloudFront is a content delivery network (CDN) which provides global content caching by leveraging hundreds of Amazon's distributed edge locations to provide low-latency and high content access speed for its users. CloudFront is also used together with AWS Certificate Manager(ACM) to provision and deploy SSL/TLS certificate to enhance this site's security by providing an encrypted tunnel for client-server bidirectional communication (HTTPS).
+					</p>
+				  </div>
+				  <div class="col-2 text-center full-even d-inline-flex justify-content-center align-items-center">
+					<div class="circle font-weight-bold">4</div>
+				  </div>
+				</div>
+				<!--path between 4-5-->
+				<div class="row timeline">
+				  <div class="col-2">
+					<div class="corner right-bottom"></div>
+				  </div>
+				  <div class="col-8">
+					<hr/>
+				  </div>
+				  <div class="col-2">
+					<div class="corner top-left"></div>
+				  </div>
+				</div>
+				<!--fifth section-->
+				<div class="row align-items-center vertical-line d-flex ">
+				  <div class="col-2 text-center full-odd d-inline-flex justify-content-center align-items-center">
+					<div class="circle font-weight-bold">5</div>
+				  </div>
+				  <div class="col-md-6 col-10 sec_animate">
+					<h5>CI/CD Pipeline(Front end)</h5>
+					<p>
+						Continuous integration & deployment methods using Git and AWS Codepipeline are also used to simplify deployment and testing. This means that production code can be pushed straight to my main Git repository, and AWS Codepipeline automatically updates the S3 bucket with the latest version of code, shortening iteration time. Apart from providing version control, Git can also be used to invalidate CloudFront caches via Git Actions so that the site can be updated almost immediately after the code is pushed into the main branch.
+					</p>
+				  </div>
+				</div>
+				<!--path between 5-6 -->
+				<div class="row timeline">
+				  <div class="col-2">
+					<div class="corner top-right"></div>
+				  </div>
+				  <div class="col-8">
+					<hr/>
+				  </div>
+				  <div class="col-2">
+					<div class="corner left-bottom"></div>
+				  </div>
+				</div>
+				<!--6th section-->
+				<div class="row align-items-center justify-content-end vertical-line d-flex ">
+					<div class="col-md-6 col-10 text-right sec_animate">
+						<h5>Custom API with AWS DynamoDB view counter</h5>
+						<p> 
+							The view counter on the landing page of this site is updated every time the webpage is refreshed. This is accomplished via a custom API created in API Gateway. Every time the API endpoint is called, a lambda function written in Python is invoked to update a dynamoDB table with an updated view count and returning the value to the frontend (To prevent spams, the API is rate-limited).
+						</p>
+					</div>
+					<div class="col-2 text-center top d-inline-flex justify-content-center align-items-center pb-5">
+						<div class="circle font-weight-bold">6</div>
+					</div>
+				</div>
+				<!--Architectural diagram-->
+					<div class="sec_animate">
+						<h2 class="pb-3 pt-5">Architectural Diagram</h2>
+						<p class="pb-2 mb-5">
+						The diagram below represents this website's back-end infrastructure, which has been designed based on a serverless architecture.
+						This design allows for a fully flexible and scalable solution that can adapt to varying levels of traffic and demand while while minimizing operational costs and maximizing uptime.
+						<!--The use of AWS serverless resources, which only charges for actual resources consumed, is an example of how this design helps minimize operational costs.-->
+						</p>
+						<div class="pb-4"><img class="img-fluid w-100 architectural-diag" src="./src/Architecture diagram.drawio.svg" alt="Website architectural diagram"></div>
 
-			</div>
+					</div>
+
+
+
 		</div>
 	</section>
 
