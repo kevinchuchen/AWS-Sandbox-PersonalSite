@@ -4,8 +4,8 @@
 //			DONE--View counter via javascript
 //			DONE--API calls to Dynamo DB
 //			DONE--Add background on section 1
-//			DONE -- Remove touchscroll completely
-//			Add animations to make it more interactive
+//			DONE--Remove touchscroll completely
+//			DONE--Add animations to make it more interactive
 //			Add error.html
 //			DONE--Modify discription of architectural roadmap
 //			DONE--Set hyperlink and navbar redirection
@@ -43,42 +43,16 @@ var HttpClient = function() {
     }
 }
 
-// var client = new HttpClient();
-// client.get('https://api.kevinlim.cc/incrementViewCount',function(response) {
-//     // update page view with custom API call
-// 	pageView = "Page views: " + String(response); 
-// 	document.getElementById("pageview").textContent= pageView;
-// 	console.log(response);
-// });
+var client = new HttpClient();
+client.get('https://api.kevinlim.cc/incrementViewCount',function(response) {
+    // update page view with custom API call
+	pageView = "Page views: " + String(response); 
+	document.getElementById("pageview").textContent= pageView;
+	console.log(response);
+});
 
 
 window.addEventListener("load", (event) => {
-	/* const observer = new IntersectionObserver((entries) => {
-		console.log(entries);
-		entries.forEach((entry) => {
-			const target= entry.target.querySelector('.ful-resp');
-			if (entry.isIntersecting) {
-				target.classList.add('animate__animated', 'animate__fadeIn');
-				
-
-				return; // if we added the class, exit the function
-			}
-			target.classList.remove('animate__animated', 'animate__fadeIn');
-
-		});
-		
-		
-	});
-	const observeList = document.querySelectorAll('.roadmap-wrapper');
-	
-	observeList.forEach((observe)=>{
-		
-		
-	})
-	observer.observe(document.querySelectorAll('.roadmap-wrapper')); */
-
-
-
 	// Register IntersectionObserver
 	const io = new IntersectionObserver((entries) => {
 	  entries.forEach((entry) => {
