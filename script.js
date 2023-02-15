@@ -67,7 +67,7 @@ window.addEventListener("load", (event) => {
 	});
 
 	// Declares what to observe, and observes its properties.
-	const boxElList = document.querySelectorAll('.ful-resp');
+	const boxElList = document.querySelectorAll('.sec_animate');
 	boxElList.forEach((el) => {
 	  io.observe(el);
 	})
