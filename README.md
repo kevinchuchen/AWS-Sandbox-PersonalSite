@@ -1,4 +1,6 @@
 # AWS-Sandbox-PersonalSite
-A site written in pure HTML hosted on AWS. This site is created so that I can practice configuring and commissioning AWS resources.
+A site written in pure HTML hosted on AWS. This site is created so that I can practice configuring and commissioning AWS resources. Check out [my portfolio](www.itskevcc.space) for more projects
 
-# Write-up and documentation of the site can be found on my site: [kevinlim.cc](www.kevinlim.cc)
+# Write-up and documentation 
+Documentation and write-up of this project can be found on my site: [kevinlim.cc](www.kevinlim.cc)
+
